@@ -33,10 +33,10 @@ const footerItems = [
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gray-900 text-white">
+    <footer className="w-full bg-green-900 text-white">
       {/* sm icons */}
       <div className="w-full py-8 px-8  flex justify-center">
-        <p className=" text-gray-300 mr-8">Folge uns:</p>
+        <p className=" text-gray-300 mr-8">Folge uns!</p>
         <div className="flex gap-6">
           {socialMediaIcons.map((item) => (
             <a
@@ -53,13 +53,13 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="w-full py-4 px-8 text-sm flex min-[520px]:flex-row flex-col justify-between items-center sm:text-lg   gap-2 border-t border-gray-800 ">
+      <div className="w-full py-4 px-8 text-sm flex min-[520px]:flex-row flex-col justify-between items-center sm:text-lg   gap-4 border-t border-gray-800 ">
         <div>
           <p className="text-gray-300">
             &copy; {new Date().getFullYear()} Growmigo. All rights reserved.
           </p>
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-6">
           {footerItems.map((item) => (
             <Link
               key={item.href}

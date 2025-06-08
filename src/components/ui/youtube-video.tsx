@@ -27,10 +27,14 @@ export default function YouTubeVideo({
   };
 
   return (
-    <div className={`relative w-full ${className}`}>
+    <div className={`relative w-full h-full ${className}`}>
       {title && <h3 className="mb-3 font-semibold">{title}</h3>}
-      <div className="aspect-video rounded-lg overflow-hidden">
-        <YouTube videoId={videoId} opts={opts} className="w-full h-full" />
+      <div className="relative w-full aspect-video rounded-lg overflow-hidden">
+        <YouTube
+          videoId={videoId}
+          opts={opts}
+          className="absolute inset-0 w-full h-full"
+        />
       </div>
     </div>
   );

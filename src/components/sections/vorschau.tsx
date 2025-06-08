@@ -1,13 +1,17 @@
+"use client";
+
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import YouTubeVideo from "@/components/ui/youtube-video";
 import SectionTitle from "../ui/section-title";
+import { useEffect, useState } from "react";
 
 const vorschauItems = [
   {
@@ -31,22 +35,40 @@ const vorschauItems = [
   {
     id: 4,
     image: "/images/plantpic.webp",
-    alt: "Entdecke mehr Arten ma babyyyyy",
-    title: "Entdecke mehr Arten ma babyyyyy",
+    alt: "Entdecke mehr Artennn",
+    title: "Entdecke mehr Artennn",
   },
 ];
 
-export default function Vorschau() {
+const Vorschau = () => {
+  // useState hooks für die carousel api
+  const [api, setApi] = useState<CarouselApi>(); // api speichert die carousel api referenz
+  const [current, setCurrent] = useState(0); // aktueller slide
+  const [count, setCount] = useState(0); // gesamtanzahl der slides
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length); // gesamtanzahl der slides
+    setCurrent(api.selectedScrollSnap() + 1); // aktueller slide, +1 weil es 0-basiert ist
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1); // aktueller slide, +1 weil es 0-basiert ist
+    });
+  }, [api]);
+
   return (
-    <section id="vorschau" className="py-10 px-6 bg-slate-300/50">
+    <section id="vorschau" className="bg-slate-300/50">
       <SectionTitle title="Vorschau des Spiels" />
 
-      <div className=" max-w-[85%] md:max-w-2xl lg:max-w-3xl mx-auto px-2 border border-red-500 ">
-        <Carousel className="w-full">
+      <div className=" max-w-[95%] md:max-w-2xl lg:max-w-3xl mx-auto px-2 w-[450px]:px-6 md:px-2 border border-red-500 ">
+        <Carousel setApi={setApi} className="w-full">
           <CarouselContent>
             {/* Erstes Bild */}
             {vorschauItems.map((item) => (
-              <CarouselItem key={item.id} className="md:basis-1/2 lg:basis-1/3">
+              <CarouselItem key={item.id} className="basis-[300px]">
                 <div className="p-2 h-full">
                   <div className="relative h-80 w-full rounded-lg overflow-hidden">
                     <Image
@@ -63,8 +85,12 @@ export default function Vorschau() {
           </CarouselContent>
 
           <div className="flex justify-center mt-4">
-            <CarouselPrevious className="mr-2" />
-            <CarouselNext />
+            <CarouselPrevious className="border-green-600 text-green-600 hover:bg-green-600 mr-2" />
+            <CarouselNext className="border-green-600 text-green-600 hover:bg-green-600" />
+          </div>
+
+          <div className=" md:hidden py-2 text-center text-sm text-muted-foreground">
+            {current} / {count}
           </div>
         </Carousel>
       </div>
@@ -72,12 +98,18 @@ export default function Vorschau() {
       <SectionTitle title="So funktioniert Growmigo" />
 
       {/* Video-Section */}
-      <div className="max-w-4xl mx-auto mt-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <YouTubeVideo videoId="dQw4w9WgXcQ" title="Schnellstart-Tutorial" />
-          <YouTubeVideo videoId="BWtBckf8RIw" title="Tipps für Anfänger" />
+      <div className="max-w-4xl p-4 lg:px-6 mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
+          <div className="w-full">
+            <YouTubeVideo videoId="dQw4w9WgXcQ" title="Schnellstart-Tutorial" />
+          </div>
+          <div className="w-full">
+            <YouTubeVideo videoId="BWtBckf8RIw" title="Tipps für Anfänger" />
+          </div>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default Vorschau;

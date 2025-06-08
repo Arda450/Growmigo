@@ -15,6 +15,7 @@ import { toast } from "sonner";
 import SubmitButton from "@/components/form/submit-button";
 import FormInput from "@/components/form/form-input";
 import SectionTitle from "../ui/section-title";
+import { Mail } from "lucide-react";
 
 const contactFormSchema = z.object({
   name: z.string().min(2, { message: "Bitte geben Sie Ihren Namen ein" }),
@@ -63,33 +64,40 @@ export default function ContactForm() {
   return (
     <section
       id="contact"
-      className=" p-4 md:p-6 bg-gradient-to-t from-green-300 to-green-200 border border-red-500"
+      className="flex flex-col lg:flex-row px-4 lg:px-10 items-start justify-center gap-20 py-8 bg-gradient-to-t from-green-900 to-green-200"
     >
-      <SectionTitle title="Kontaktieren Sie uns" />
+      <div className="flex flex-col items-center gap-4 w-full">
+        <SectionTitle title="Kontaktieren Sie uns" />
+        <div className="flex items-center gap-2">
+          <Mail className="w-5 h-5" />
+          <span>info@growmigo.ch</span>
+        </div>
+      </div>
+
       <Form {...form}>
         <form
-          className="grid grid-cols-3 items-center max-w-lg mx-auto p-6 bg-white rounded-lg shadow-md"
+          className="w-full p-4 bg-white rounded-lg shadow-md"
           onSubmit={form.handleSubmit(onSubmit)}
         >
-          <div className="col-span-3 flex flex-col gap-6 lg:col-span-3">
+          <div className=" flex flex-col gap-6">
             <FormInput
               form={form}
               name="name"
-              label="Name"
+              label="Name:"
               placeholder="John Doe"
             />
 
             <FormInput
               form={form}
               name="email"
-              label="Email"
+              label="Email:"
               placeholder="john@example.com"
             />
 
-            <FormInput form={form} name="subject" label="Betreff" />
+            <FormInput form={form} name="subject" label="Betreff:" />
 
             <div className="space-y-1">
-              <h3 className="lg:text-xl mb-1">Nachricht</h3>
+              <h3 className="lg:text-xl mb-1">Nachricht:</h3>
               <FormField
                 control={form.control}
                 name="message"
@@ -108,8 +116,13 @@ export default function ContactForm() {
                 )}
               />
             </div>
-            <SubmitButton isLoading={isLoading} />
           </div>
+          <SubmitButton
+            isLoading={isLoading}
+            text="Nachricht senden"
+            loadingText="Wird gesendet..."
+            className=" bg-[#4ECDC4] hover:bg-green-600 font-bold py-4 px-6 shadow-lg hover:shadow-xl transform hover:scale-105 duration-200 mt-6"
+          />
         </form>
       </Form>
     </section>

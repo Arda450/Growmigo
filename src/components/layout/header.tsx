@@ -8,7 +8,7 @@ export default function Header() {
   const { isHomePage } = useNav();
 
   return (
-    <header className="w-full px-4 py-4 absolute top-0 left-0 z-20 border border-red-500">
+    <header className="w-full px-4 py-4 absolute top-0 left-0 z-20 border border-red-500 ">
       <div className="w-full flex items-center justify-between max-w-7xl mx-auto">
         <div>
           <h1

@@ -41,7 +41,7 @@ const TeamMitglieder = [
     title: "Max Musterenkel",
     branche: "Marketing",
     image: "/images/plantpic.webp",
-    alt: "Entdecke mehr Arten ma babyyyyy",
+    alt: "Entdecke mehr Artennn",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
   },
@@ -50,7 +50,7 @@ const TeamMitglieder = [
     title: "Max Musterurenkel",
     branche: "Webdesign",
     image: "/images/plantpic.webp",
-    alt: "Entdecke mehr Arten ma babyyyyy",
+    alt: "Entdecke mehr Artennnn",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
   },
@@ -59,7 +59,7 @@ const TeamMitglieder = [
     title: "Max Musterururenkel",
     branche: "Programmierer2",
     image: "/images/plantpic.webp",
-    alt: "Entdecke mehr Arten ma babyyyyy",
+    alt: "Entdecke mehr Artennnn",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
   },
@@ -67,10 +67,7 @@ const TeamMitglieder = [
 
 export default function UnserTeam() {
   return (
-    <section
-      id="unser-team"
-      className="w-full py-20 bg-gradient-to-b from-green-50 to-white"
-    >
+    <section id="unser-team" className="w-full py-20 px-6">
       <SectionTitle title="Unser Team" />
       <div className="container px-4 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">

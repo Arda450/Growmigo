@@ -44,11 +44,53 @@ const tippsList = [
     content:
       "Viele Zimmerpflanzen stammen aus tropischen Regionen und lieben eine hohe Luftfeuchtigkeit. Stelle einen Luftbefeuchter auf, gruppiere deine Pflanzen oder stelle sie auf Schalen mit Wasser und Kieselsteinen, um die Luftfeuchtigkeit zu erhöhen.",
   },
+  {
+    id: 7,
+    title: "Richtige Temperatur",
+    image: "/images/plantpic.webp",
+    content:
+      "Die meisten Zimmerpflanzen fühlen sich bei 18-24°C am wohlsten. Vermeide extreme Temperaturschwankungen und stelle Pflanzen nicht direkt neben Heizkörper oder Klimaanlagen. Nachts darf es etwas kühler sein - das fördert sogar das Wachstum vieler Arten.",
+  },
+  {
+    id: 8,
+    title: "Blätter regelmässig reinigen",
+    image: "/images/plantpic.webp",
+    content:
+      "Staub blockiert die Poren der Blätter und hindert die Photosynthese. Wische die Blätter wöchentlich mit einem feuchten Tuch ab oder dusche sie sanft ab. Bei behaarten Blättern verwende einen weichen Pinsel. Saubere Blätter sehen nicht nur schöner aus, sondern sind auch gesünder.",
+  },
+  {
+    id: 9,
+    title: "Winterpflege beachten",
+    image: "/images/plantpic.webp",
+    content:
+      "Im Winter brauchen Pflanzen weniger Wasser und Dünger, da sie langsamer wachsen. Reduziere die Wassergaben und stelle sie an hellere Plätze, da die Tage kürzer sind. Viele Pflanzen benötigen eine Ruhephase - das ist völlig normal und wichtig für ihre Gesundheit.",
+  },
+  {
+    id: 10,
+    title: "Früherkennung von Problemen",
+    image: "/images/plantpic.webp",
+    content:
+      "Gelbe Blätter können Überwässerung bedeuten, braune Spitzen deuten auf niedrige Luftfeuchtigkeit hin. Hängende Blätter signalisieren meist Wassermangel. Lerne die Signale deiner Pflanzen zu verstehen - sie zeigen dir, was sie brauchen.",
+  },
+  {
+    id: 11,
+    title: "Richtige Erde wählen",
+    image: "/images/plantpic.webp",
+    content:
+      "Verwende qualitativ hochwertige Blumenerde mit guter Drainage. Sukkulenten und Kakteen benötigen spezielle Kakteenerde, während tropische Pflanzen nährstoffreiche, feuchtigkeitsspeichernde Erde bevorzugen. Mische bei Bedarf Perlite oder Sand unter für bessere Drainage.",
+  },
+  {
+    id: 12,
+    title: "Pflanzen vermehren",
+    image: "/images/plantpic.webp",
+    content:
+      "Viele Zimmerpflanzen lassen sich leicht durch Stecklinge vermehren. Schneide gesunde Triebe ab, stelle sie in Wasser bis Wurzeln wachsen, dann topfe sie ein. So kannst du deine Pflanzensammlung erweitern oder Freunden eine Freude machen.",
+  },
 ];
 
 export default function TippsSection() {
   return (
-    <section id="tipps" className="py-14 px-6 max-w-7xl mx-auto">
+    <section id="tipps" className="py-20 px-6 max-w-7xl mx-auto">
       <SectionTitle title="Pflegetipps für deine Pflanzen" />
 
       <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10">

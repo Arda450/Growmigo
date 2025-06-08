@@ -1,14 +1,15 @@
 import SectionTitle from "../ui/section-title";
+import AnimatedButton from "../ui/animated-button";
 
 export default function UeberDasSpiel() {
   return (
     <section
       id="ueber-das-spiel"
-      className="flex flex-col py-10 space-y-4 mx-auto border border-red-400"
+      className="flex flex-col space-y-4 px-4 lg:px-10 mx-auto font-bold"
     >
       <SectionTitle title="Über das Spiel" />
 
-      <div className="max-w-7xl mx-auto px-4 border border-pink-500 text-gray-600">
+      <div className="max-w-7xl mx-auto text-gray-600">
         <p>
           Willkommen bei Growmigo – dem entspannten Spiel, in dem du liebevoll
           deine eigenen virtuellen Pflanzen pflegst. Ob kleine Sukkulente, bunte
@@ -33,12 +34,19 @@ export default function UeberDasSpiel() {
 
         <p>Einfach klicken und kostenlos downloaden!</p>
 
-        <div className="mt-6 flex flex-col sm:flex-row gap-4">
-          <a
+        <div className="my-6 flex flex-col sm:flex-row gap-4">
+          <AnimatedButton
             href="https://play.google.com/store/apps"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-green-600 hover:bg-green-700 text-white font-bold text-xs sm:text-sm md:text-base py-2 sm:py-3 px-4 sm:px-6 sm:rounded-xl rounded-md flex items-center justify-center transition-colors duration-200 w-fit mx-auto sm:mx-0"
+          >
+            Jetzt herunterladen
+          </AnimatedButton>
+          {/* <a
+            href="https://play.google.com/store/apps"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-green-600 hover:bg-green-700 text-white font-bold text-md sm:text-lg py-3 sm:py-3 px-6 sm:px-6 sm:rounded-xl rounded-lg flex items-center justify-center transition-colors duration-200 w-fit mx-auto sm:mx-0"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +63,7 @@ export default function UeberDasSpiel() {
               />
             </svg>
             <span className="whitespace-nowrap">Jetzt herunterladen</span>
-          </a>
+          </a> */}
         </div>
       </div>
     </section>

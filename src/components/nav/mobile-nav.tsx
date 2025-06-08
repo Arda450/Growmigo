@@ -62,18 +62,29 @@ export function MobileNav() {
       <SheetTrigger asChild>
         <Button
           variant="ghost"
-          className={`md:hidden p-2 ${
+          className={`md:hidden p-2 hover:bg-white/20 transition-all duration-300 ${
             isHomePage ? "text-white" : "text-black"
           }`}
         >
-          <Menu className="!size-6" />
+          <Menu className="!size-8 stroke-[3]" />
         </Button>
       </SheetTrigger>
       <SheetContent
         side="right"
         className="w-[300px] sm:w-[350px] p-0 overflow-hidden bg-gradient-to-b from-white to-green-200"
       >
-        <div className="absolute -z-10 top-0 right-0 w-full h-64 opacity-10 pattern-dots pattern-green-500 pattern-bg-white pattern-size-6"></div>
+        <div className="absolute inset-0 -z-10 opacity-20">
+          <div className="absolute bottom-16 left-12 text-2xl">🍎</div>
+          <div className="absolute top-20 right-8 text-3xl">🥕</div>
+          <div className="absolute top-32 left-12 text-2xl">🍓</div>
+          <div className="absolute top-48 right-6 text-3xl">🥬</div>
+          <div className="absolute top-64 left-8 text-2xl">🍊</div>
+          <div className="absolute top-80 right-12 text-4xl">🍆</div>
+          <div className="absolute bottom-80 left-10 text-3xl">🥒</div>
+          <div className="absolute bottom-48 right-4 text-2xl">🍌</div>
+          <div className="absolute bottom-40 left-24 text-3xl">🥦</div>
+          <div className="absolute bottom-16 right-10 text-2xl">🍅</div>
+        </div>
 
         <SheetHeader className="border-b p-6">
           <SheetTitle className="text-2xl font-bold text-green-700">
@@ -81,7 +92,7 @@ export function MobileNav() {
           </SheetTitle>
         </SheetHeader>
 
-        <div className="px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider">
+        <div className="px-6 py-3 text-md font-semibold text-gray-500 uppercase tracking-wider">
           Hauptmenü
         </div>
         <nav className="flex flex-col p-4">
@@ -91,7 +102,7 @@ export function MobileNav() {
                 href={item.href}
                 className={`flex items-center gap-3 p-3 rounded-md transition-all ${
                   pathname === item.href
-                    ? "bg-green-100 text-green-700"
+                    ? "bg-green-200 text-green-800"
                     : "hover:bg-gray-100"
                 }`}
               >
@@ -102,7 +113,7 @@ export function MobileNav() {
           ))}
         </nav>
 
-        <div className="px-6 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wider mt-4">
+        <div className="px-6 py-3 text-md< font-semibold text-gray-500 uppercase tracking-wider mt-4">
           Weiteres
         </div>
 
