@@ -79,8 +79,8 @@ export default function UnserTeam() {
                 index % 2 === 1 ? "md:mt-20" : ""
               }`}
             >
-              <Card className="h-[500px] w-full max-w-[300px] border-0 shadow-md overflow-hidden">
-                <div className="relative h-48 w-full border border-red-400">
+              <Card className="h-[500px] w-[300px]  border-0 shadow-md overflow-hidden">
+                <div className="relative h-[40%] w-full">
                   <Image
                     src={item.image}
                     alt={item.alt}

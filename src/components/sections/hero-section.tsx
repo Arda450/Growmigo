@@ -14,7 +14,7 @@ export default function HeroSection() {
           priority
         />
         {/*Dunkler Overlay für bessere Lesbarkeit */}
-        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
 
       <div className="h-[400px] max-w-7xl  mx-auto flex flex-col justify-end border border-blue-500">

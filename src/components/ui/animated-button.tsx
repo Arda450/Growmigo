@@ -26,14 +26,14 @@ const AnimatedButton = forwardRef<
 
     const baseClasses = cn(
       "group inline-flex items-center px-8 py-3 text-white font-black text-lg md:text-xl",
-      "bg-green-600 transition-all duration-300 shadow-[6px_6px_0_#d1d5db]",
+      "bg-[#909d7b] transition-all duration-300 shadow-[6px_6px_0_#d1d5db]",
       "transform -skew-x-12 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-400",
       "active:scale-95 active:shadow-[4px_4px_0_black]", // Mobile press feedback
       // Hover effects für Desktop
-      "hover:shadow-[10px_10px_0_#166534] hover:duration-300",
+      "hover:bg-[#ff914d] hover:shadow-[10px_10px_0_#422b1c] hover:duration-300",
       // Touch/pressed state
-      isPressed && "shadow-[8px_8px_0_#00471d] scale-[0.98]",
-      isTouched && "shadow-[8px_8px_0_#7e5b42]",
+      isPressed && "shadow-[8px_8px_0_#422b1c] scale-[0.98]",
+      isTouched && "shadow-[8px_8px_0_#422b1c]",
       variant === "secondary" && "bg-gray-700",
       className
     );

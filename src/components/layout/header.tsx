@@ -3,6 +3,7 @@
 import MainNav from "../nav/main-nav";
 import { useNav } from "@/hooks/use-nav";
 import { MobileNav } from "../nav/mobile-nav";
+import Link from "next/link";
 
 export default function Header() {
   const { isHomePage } = useNav();
@@ -16,7 +17,7 @@ export default function Header() {
               isHomePage ? "text-white" : "text-black"
             }`}
           >
-            Growmigo
+            <Link href="/">Growmigo</Link>
           </h1>
         </div>
         <MainNav className="hidden md:block border border-gray" />

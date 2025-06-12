@@ -71,7 +71,7 @@ export function MobileNav() {
       </SheetTrigger>
       <SheetContent
         side="right"
-        className="w-[300px] sm:w-[350px] p-0 overflow-hidden bg-gradient-to-b from-white to-green-200"
+        className="w-[300px] sm:w-[350px] p-0 overflow-hidden bg-gradient-to-b from-white to-[#ff914d]"
       >
         <div className="absolute inset-0 -z-10 opacity-20">
           <div className="absolute bottom-16 left-12 text-2xl">🍎</div>
@@ -87,12 +87,12 @@ export function MobileNav() {
         </div>
 
         <SheetHeader className="border-b p-6">
-          <SheetTitle className="text-2xl font-bold text-green-700">
+          <SheetTitle className="text-2xl font-bold text-[#909d7b]">
             Growmigo
           </SheetTitle>
         </SheetHeader>
 
-        <div className="px-6 py-3 text-md font-semibold text-gray-500 uppercase tracking-wider">
+        <div className="px-6 py-3 text-md font-bold text-[#909d7b] uppercase tracking-wider">
           Hauptmenü
         </div>
         <nav className="flex flex-col p-4">
@@ -102,7 +102,7 @@ export function MobileNav() {
                 href={item.href}
                 className={`flex items-center gap-3 p-3 rounded-md transition-all ${
                   pathname === item.href
-                    ? "bg-green-200 text-green-800"
+                    ? "bg-[#909d7b] text-white"
                     : "hover:bg-gray-100"
                 }`}
               >
@@ -113,7 +113,7 @@ export function MobileNav() {
           ))}
         </nav>
 
-        <div className="px-6 py-3 text-md< font-semibold text-gray-500 uppercase tracking-wider mt-4">
+        <div className="px-6 py-3 text-md font-bold text-[#909d7b] uppercase tracking-wider mt-4">
           Weiteres
         </div>
 
@@ -138,7 +138,7 @@ export function MobileNav() {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center w-10 h-10 rounded-full bg-green-100 hover:bg-green-200 text-green-700 hover:text-green-800 transition-all hover:scale-110 hover:shadow-md"
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-[#909d7b] text-white transition-all hover:scale-110 hover:shadow-md"
               >
                 <FontAwesomeIcon icon={item.icon} className="text-lg" />
                 <span className="sr-only">{item.name}</span>

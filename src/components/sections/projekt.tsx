@@ -4,11 +4,11 @@ export default function Projekt() {
   return (
     <section
       id="projekt"
-      className="flex flex-col  mx-auto bg-gradient-to-b from-slate-300/50 to-green-200 font-bold"
+      className="flex flex-col mx-auto font-bold bg-[#909d7b] text-white"
     >
       <SectionTitle title="Über unser Projekt" />
 
-      <p className="px-4 border border-red-200 max-w-7xl mx-auto text-gray-600">
+      <p className="px-4 py-6 max-w-7xl mx-auto text-lg">
         Growmigo ist das Ergebnis eines kreativen Gruppenprojekts von sechs
         motivierten Köpfen. Mit dabei sind zwei leidenschaftliche
         Game-Programmierer, ein fantasievoller Game Designer, ein Webentwickler,

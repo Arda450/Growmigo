@@ -85,12 +85,14 @@ const Vorschau = () => {
           </CarouselContent>
 
           <div className="flex justify-center mt-4">
-            <CarouselPrevious className="border-green-600 text-green-600 hover:bg-green-600 mr-2" />
-            <CarouselNext className="border-green-600 text-green-600 hover:bg-green-600" />
+            <CarouselPrevious className="border-[#909d7b ] text-[#909d7b] hover:bg-[#909d7b] mr-2" />
+            <CarouselNext className="border-[#909d7b] text-[#909d7b] hover:bg-[#909d7b]" />
           </div>
 
-          <div className=" md:hidden py-2 text-center text-sm text-muted-foreground">
-            {current} / {count}
+          <div className="flex justify-center lg:hidden">
+            <div className="bg-[#909d7b] text-white inline-flex p-2 text-center text-sm font-bold rounded-xl">
+              {current} / {count}
+            </div>
           </div>
         </Carousel>
       </div>
@@ -98,7 +100,7 @@ const Vorschau = () => {
       <SectionTitle title="So funktioniert Growmigo" />
 
       {/* Video-Section */}
-      <div className="max-w-4xl p-4 lg:px-6 mx-auto">
+      <div className="max-w-4xl px-4 py-6 lg:px-6 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
           <div className="w-full">
             <YouTubeVideo videoId="dQw4w9WgXcQ" title="Schnellstart-Tutorial" />

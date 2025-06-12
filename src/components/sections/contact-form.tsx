@@ -64,7 +64,7 @@ export default function ContactForm() {
   return (
     <section
       id="contact"
-      className="flex flex-col lg:flex-row px-4 lg:px-10 items-start justify-center gap-20 py-8 bg-gradient-to-t from-green-900 to-green-200"
+      className="flex flex-col lg:flex-row px-4 lg:px-10 items-start justify-center gap-20 py-8"
     >
       <div className="flex flex-col items-center gap-4 w-full">
         <SectionTitle title="Kontaktieren Sie uns" />
@@ -121,7 +121,7 @@ export default function ContactForm() {
             isLoading={isLoading}
             text="Nachricht senden"
             loadingText="Wird gesendet..."
-            className=" bg-[#4ECDC4] hover:bg-green-600 font-bold py-4 px-6 shadow-lg hover:shadow-xl transform hover:scale-105 duration-200 mt-6"
+            className=" bg-[#ff914d] hover:bg-[#909d7b] font-bold py-4 px-6 shadow-lg hover:shadow-xl transform hover:scale-105 duration-200 mt-6"
           />
         </form>
       </Form>
