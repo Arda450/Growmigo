@@ -17,7 +17,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-black/30"></div>
       </div>
 
-      <div className="h-[400px] max-w-7xl  mx-auto flex flex-col justify-end border border-blue-500">
+      <div className="h-[400px] max-w-7xl  mx-auto flex flex-col justify-end">
         <div className="flex flex-col gap-4 px-4 md:py-8 mb-6 max-w-7xl mx-auto w-full">
           {/* <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
             Growmigo
