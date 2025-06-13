@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
 import DisclaimerBanner from "@/components/ui/disclaimer-banner";
+import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,6 +47,13 @@ export default function RootLayout({
         <Header />
         <main className="flex-grow w-full">{children}</main>
         <Footer />
+        <Toaster
+          position="top-right"
+          richColors
+          closeButton
+          expand={false}
+          visibleToasts={5}
+        />
       </body>
     </html>
   );

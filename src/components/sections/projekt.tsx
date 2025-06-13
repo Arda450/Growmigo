@@ -8,7 +8,7 @@ export default function Projekt() {
     >
       <SectionTitle title="Über unser Projekt" />
 
-      <p className="px-4 py-6 max-w-7xl mx-auto text-lg">
+      <p className="px-4 lg:px-10 py-6 max-w-7xl mx-auto text-lg">
         Growmigo ist das Ergebnis eines kreativen Gruppenprojekts von sechs
         motivierten Köpfen. Mit dabei sind zwei leidenschaftliche
         Game-Programmierer, ein fantasievoller Game Designer, ein Webentwickler,

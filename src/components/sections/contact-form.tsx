@@ -54,10 +54,13 @@ export default function ContactForm() {
       text: mailText,
     });
     // wenn die email erfolgreich gesendet wurde, wird eine toast message angezeigt
+    console.log("Email response:", response);
     if (response && !("error" in response)) {
+      console.log("Showing success toast");
       toast.success("Email wurde erfolgreich gesendet.");
       form.reset();
     } else {
+      console.log("Showing error toast");
       toast.error("Fehler beim Senden der Email.");
     }
   };

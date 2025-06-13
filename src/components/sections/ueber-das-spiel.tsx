@@ -9,7 +9,7 @@ export default function UeberDasSpiel() {
     >
       <SectionTitle title="Über das Spiel" />
 
-      <div className="max-w-7xl mx-auto text-gray-600">
+      <div className="max-w-7xl mx-auto text-lg">
         <p>
           Willkommen bei Growmigo – dem entspannten Spiel, in dem du liebevoll
           deine eigenen virtuellen Pflanzen pflegst. Ob kleine Sukkulente, bunte
