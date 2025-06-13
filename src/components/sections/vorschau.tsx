@@ -9,7 +9,6 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import Image from "next/image";
-import YouTubeVideo from "@/components/ui/youtube-video";
 import SectionTitle from "../ui/section-title";
 import { useEffect, useState } from "react";
 
@@ -103,10 +102,20 @@ const Vorschau = () => {
       <div className="max-w-4xl px-4 py-6 lg:px-6 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
           <div className="w-full">
-            <YouTubeVideo videoId="dQw4w9WgXcQ" title="Schnellstart-Tutorial" />
+            <div className="aspect-video bg-gradient-to-br from-[#909d7b] to-[#675444] rounded-lg flex items-center justify-center">
+              <div className="text-center text-white">
+                <h3 className="text-xl font-bold mb-2">Gameplay Video</h3>
+                <p className="text-sm opacity-90">Kommt bald!</p>
+              </div>
+            </div>
           </div>
           <div className="w-full">
-            <YouTubeVideo videoId="BWtBckf8RIw" title="Tipps für Anfänger" />
+            <div className="aspect-video bg-gradient-to-br from-[#ff914d] to-[#cc6b3a] rounded-lg flex items-center justify-center">
+              <div className="text-center text-white">
+                <h3 className="text-xl font-bold mb-2">Tutorial Video</h3>
+                <p className="text-sm opacity-90">Kommt bald!</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

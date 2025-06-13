@@ -3,7 +3,7 @@ import { Geist, Geist_Mono, Quicksand, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
-import { Toaster } from "sonner";
+import DisclaimerBanner from "@/components/ui/disclaimer-banner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -42,10 +42,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${quicksand.variable} ${dancingScript.variable} antialiased min-h-screen flex flex-col overflow-x-hidden w-full`}
       >
+        <DisclaimerBanner />
         <Header />
         <main className="flex-grow w-full">{children}</main>
         <Footer />
-        <Toaster position="top-center" closeButton richColors />
       </body>
     </html>
   );
