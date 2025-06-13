@@ -89,7 +89,7 @@ export default function UnserTeam() {
                   />
                 </div>
                 <CardHeader>
-                  <div className="flex flex-col items-center gap-1 text-green-700 text-xl">
+                  <div className="flex flex-col items-center gap-1 text-[#422b1c] text-xl">
                     <CardTitle>{item.title}</CardTitle>
                     <CardDescription>{item.branche}</CardDescription>
                   </div>

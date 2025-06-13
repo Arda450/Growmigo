@@ -114,7 +114,7 @@ export default function TippsSection() {
               />
             </div>
             <div className="p-5">
-              <h3 className="font-bold text-xl mb-3 text-green-700">
+              <h3 className="font-bold text-xl mb-3 text-[#422b1c]">
                 {tipp.title}
               </h3>
               <p className="text-gray-600">{tipp.content}</p>

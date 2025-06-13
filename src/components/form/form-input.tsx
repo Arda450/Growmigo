@@ -1,24 +1,24 @@
 "use client";
 
-import { UseFormReturn } from "react-hook-form";
+import { UseFormReturn, FieldValues, Path } from "react-hook-form";
 import { FormControl, FormField, FormMessage } from "../ui/form";
 
 import { FormItem } from "../ui/form";
 import { Input } from "../ui/input";
 
-type FormInputProps = {
-  form: UseFormReturn<any>;
-  name: string;
+type FormInputProps<T extends FieldValues = FieldValues> = {
+  form: UseFormReturn<T>;
+  name: Path<T>;
   label: string;
   placeholder?: string;
 };
 
-export default function FormInput({
+export default function FormInput<T extends FieldValues>({
   form,
   name,
   label,
   placeholder = "",
-}: FormInputProps) {
+}: FormInputProps<T>) {
   return (
     <div className="space-y-1">
       <h3 className="lg:text-xl mb-1">{label}</h3>
