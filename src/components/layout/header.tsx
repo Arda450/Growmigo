@@ -9,7 +9,7 @@ export default function Header() {
   const { isHomePage } = useNav();
 
   return (
-    <header className="w-full px-4 py-4 absolute top-0 left-0 z-20 border border-red-500 ">
+    <header className="w-full px-4 py-4 absolute top-0 left-0 z-20">
       <div className="w-full flex items-center justify-between max-w-7xl mx-auto">
         <div>
           <h1
@@ -20,7 +20,7 @@ export default function Header() {
             <Link href="/">Growmigo</Link>
           </h1>
         </div>
-        <MainNav className="hidden md:block border border-gray" />
+        <MainNav className="hidden md:block" />
         <div className="flex items-center justify-end">
           <MobileNav />
         </div>

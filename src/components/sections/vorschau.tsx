@@ -63,7 +63,7 @@ const Vorschau = () => {
     <section id="vorschau" className="bg-slate-300/50">
       <SectionTitle title="Vorschau des Spiels" />
 
-      <div className=" max-w-[95%] md:max-w-2xl lg:max-w-3xl mx-auto px-2 w-[450px]:px-6 md:px-2 border border-red-500 ">
+      <div className=" max-w-[95%] md:max-w-2xl lg:max-w-3xl mx-auto px-2 w-[450px]:px-6 md:px-2">
         <Carousel setApi={setApi} className="w-full">
           <CarouselContent>
             {/* Erstes Bild */}
