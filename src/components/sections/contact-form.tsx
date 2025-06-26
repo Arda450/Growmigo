@@ -79,7 +79,7 @@ export default function ContactForm() {
 
       <Form {...form}>
         <form
-          className="w-full p-4 bg-white rounded-lg shadow-md"
+          className="w-full p-4 bg-gray-100 rounded-lg shadow-md"
           onSubmit={form.handleSubmit(onSubmit)}
         >
           <div className=" flex flex-col gap-6">

@@ -20,8 +20,8 @@ export default function Header() {
             <Link href="/">Growmigo</Link>
           </h1>
         </div>
-        <MainNav className="hidden md:block" />
         <div className="flex items-center justify-end">
+          <MainNav className="hidden md:block" />
           <MobileNav />
         </div>
       </div>

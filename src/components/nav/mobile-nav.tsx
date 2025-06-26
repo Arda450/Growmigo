@@ -19,6 +19,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useNav } from "@/hooks/use-nav";
 import { usePathname } from "next/navigation";
+import { OpenMoji } from "@/components/ui/openmoji";
 
 const navItems = [
   { href: "/", label: "Home", icon: <Home className="h-5 w-5" /> },
@@ -74,16 +75,36 @@ export function MobileNav() {
         className="w-[300px] sm:w-[350px] p-0 overflow-hidden bg-gradient-to-b from-white to-[#ff914d]"
       >
         <div className="absolute inset-0 -z-10 opacity-20">
-          <div className="absolute bottom-16 left-12 text-2xl">🍎</div>
-          <div className="absolute top-20 right-8 text-3xl">🥕</div>
-          <div className="absolute top-32 left-12 text-2xl">🍓</div>
-          <div className="absolute top-48 right-6 text-3xl">🥬</div>
-          <div className="absolute top-64 left-8 text-2xl">🍊</div>
-          <div className="absolute top-80 right-12 text-4xl">🍆</div>
-          <div className="absolute bottom-80 left-10 text-3xl">🥒</div>
-          <div className="absolute bottom-48 right-4 text-2xl">🍌</div>
-          <div className="absolute bottom-40 left-24 text-3xl">🥦</div>
-          <div className="absolute bottom-16 right-10 text-2xl">🍅</div>
+          <div className="absolute bottom-16 left-12">
+            <OpenMoji emoji="apple" size={40} />
+          </div>
+          <div className="absolute top-20 right-8">
+            <OpenMoji emoji="carrot" size={48} />
+          </div>
+          <div className="absolute top-32 left-12">
+            <OpenMoji emoji="strawberry" size={40} />
+          </div>
+          <div className="absolute top-48 right-6">
+            <OpenMoji emoji="lettuce" size={48} />
+          </div>
+          <div className="absolute top-64 left-8">
+            <OpenMoji emoji="orange" size={40} />
+          </div>
+          <div className="absolute top-80 right-12">
+            <OpenMoji emoji="eggplant" size={56} />
+          </div>
+          <div className="absolute bottom-80 left-10">
+            <OpenMoji emoji="cucumber" size={48} />
+          </div>
+          <div className="absolute bottom-48 right-4">
+            <OpenMoji emoji="banana" size={40} />
+          </div>
+          <div className="absolute bottom-40 left-24">
+            <OpenMoji emoji="broccoli" size={48} />
+          </div>
+          <div className="absolute bottom-16 right-10">
+            <OpenMoji emoji="tomato" size={40} />
+          </div>
         </div>
 
         <SheetHeader className="border-b p-6">
