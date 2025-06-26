@@ -19,6 +19,7 @@ module.exports = {
       fontFamily: {
         quicksand: ["var(--font-quicksand)"],
         script: ["var(--font-dancing-script)"],
+        "more-sugar": ["More Sugar", "cursive", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",

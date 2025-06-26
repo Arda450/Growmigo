@@ -72,7 +72,7 @@ export function MobileNav() {
       </SheetTrigger>
       <SheetContent
         side="right"
-        className="w-[300px] sm:w-[350px] p-0 overflow-hidden bg-gradient-to-b from-white to-[#ff914d]"
+        className="w-[300px] sm:w-[350px] p-0 overflow-hidden bg-gradient-to-b from-white to-[#ff914d] font-more-sugar"
       >
         <div className="absolute inset-0 -z-10 opacity-20">
           <div className="absolute bottom-16 left-12">
