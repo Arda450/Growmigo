@@ -72,7 +72,7 @@ export function MobileNav() {
       </SheetTrigger>
       <SheetContent
         side="right"
-        className="w-[300px] sm:w-[350px] p-0 overflow-hidden bg-gradient-to-b from-white to-[#ff914d] font-more-sugar"
+        className="w-[300px] sm:w-[350px] p-0 overflow-hidden bg-gradient-to-b from-white to-[#ff914d] font-fredoka"
       >
         <div className="absolute inset-0 -z-10 opacity-20">
           <div className="absolute bottom-16 left-12">
@@ -107,68 +107,62 @@ export function MobileNav() {
           </div>
         </div>
 
-        <SheetHeader className="border-b p-6">
-          <SheetTitle className="text-2xl font-bold text-[#909d7b]">
-            Growmigo
-          </SheetTitle>
-        </SheetHeader>
+        <div className="flex flex-col h-full">
+          <SheetHeader className="px-6 py-4 border-b border-white/20 bg-white/10">
+            <SheetTitle className="text-2xl font-bold text-[#422b1c] text-left">
+              Growmigo
+            </SheetTitle>
+          </SheetHeader>
 
-        <div className="px-6 py-3 text-md font-bold text-[#909d7b] uppercase tracking-wider">
-          Hauptmenü
-        </div>
-        <nav className="flex flex-col p-4">
-          {navItems.map((item) => (
-            <SheetClose key={item.href} asChild>
-              <Link
-                href={item.href}
-                className={`flex items-center gap-3 p-3 rounded-md transition-all ${
-                  pathname === item.href
-                    ? "bg-[#909d7b] text-white"
-                    : "hover:bg-gray-100"
-                }`}
-              >
-                {item.icon}
-                <span className="font-medium">{item.label}</span>
-              </Link>
-            </SheetClose>
-          ))}
-        </nav>
-
-        <div className="px-6 py-3 text-md font-bold text-[#909d7b] uppercase tracking-wider mt-4">
-          Weiteres
-        </div>
-
-        <nav className="flex flex-col p-4">
-          {footerItems.map((item) => (
-            <SheetClose key={item.href} asChild>
-              <Link
-                href={item.href}
-                className="flex items-center gap-3 px-3 py-2 rounded-md transition-all hover:bg-gray-100"
-              >
-                <span className="font-medium text-gray-600">{item.label}</span>
-              </Link>
-            </SheetClose>
-          ))}
-        </nav>
-
-        <div className="mt-auto pt-6 border-t mx-6 mb-6">
-          <div className="flex justify-center gap-4 mb-4">
-            {socialMediaIcons.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center w-10 h-10 rounded-full bg-[#909d7b] text-white transition-all hover:scale-110 hover:shadow-md"
-              >
-                <FontAwesomeIcon icon={item.icon} className="text-lg" />
-                <span className="sr-only">{item.name}</span>
-              </a>
-            ))}
+          <div className="flex-1 px-6 py-6">
+            <nav className="space-y-4">
+              {navItems.map((item) => (
+                <SheetClose key={item.href} asChild>
+                  <Link
+                    href={item.href}
+                    className={`flex items-center gap-3 p-3 rounded-lg transition-all duration-200 text-lg font-medium ${
+                      pathname === item.href
+                        ? "bg-[#422b1c] text-white shadow-lg"
+                        : "text-[#422b1c] hover:bg-white/20 hover:text-[#2d1f15]"
+                    }`}
+                  >
+                    {item.icon}
+                    {item.label}
+                  </Link>
+                </SheetClose>
+              ))}
+            </nav>
           </div>
-          <p className="text-center text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} Growmigo
-          </p>
+
+          <div className="px-6 py-4 border-t border-white/20 bg-white/10">
+            <div className="flex justify-center gap-4 mb-4">
+              {socialMediaIcons.map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#422b1c] hover:text-[#2d1f15] transition-colors p-2 rounded-lg hover:bg-white/20"
+                >
+                  <FontAwesomeIcon icon={item.icon} size="lg" />
+                  <span className="sr-only">{item.name}</span>
+                </a>
+              ))}
+            </div>
+
+            <div className="flex justify-center gap-4 text-sm">
+              {footerItems.map((item) => (
+                <SheetClose key={item.href} asChild>
+                  <Link
+                    href={item.href}
+                    className="text-[#422b1c] hover:text-[#2d1f15] transition-colors hover:underline"
+                  >
+                    {item.label}
+                  </Link>
+                </SheetClose>
+              ))}
+            </div>
+          </div>
         </div>
       </SheetContent>
     </Sheet>

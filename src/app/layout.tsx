@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Quicksand, Dancing_Script } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Quicksand,
+  Dancing_Script,
+  Fredoka,
+} from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
@@ -28,6 +34,12 @@ const dancingScript = Dancing_Script({
   weight: ["400", "500", "600", "700"],
 });
 
+const fredoka = Fredoka({
+  variable: "--font-fredoka",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
+
 export const metadata: Metadata = {
   title: "Growmigo",
   description: "Unsere Wurzeln sind individuell, unser Ziel ist gemeinsam.",
@@ -41,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${quicksand.variable} ${dancingScript.variable} antialiased min-h-screen flex flex-col overflow-x-hidden w-full`}
+        className={`${geistSans.variable} ${geistMono.variable} ${quicksand.variable} ${dancingScript.variable} ${fredoka.variable} antialiased min-h-screen flex flex-col overflow-x-hidden w-full`}
       >
         <DisclaimerBanner />
         <Header />

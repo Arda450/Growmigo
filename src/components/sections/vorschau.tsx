@@ -59,7 +59,7 @@ const Vorschau = () => {
   }, [api]);
 
   return (
-    <section id="vorschau" className="bg-slate-300/50">
+    <section id="vorschau" className="bg-slate-300/50 font-bold">
       <SectionTitle title="Vorschau des Spiels" />
 
       <div className=" max-w-[95%] md:max-w-2xl lg:max-w-3xl mx-auto px-2 w-[450px]:px-6 md:px-2">
@@ -102,20 +102,38 @@ const Vorschau = () => {
       <div className="max-w-4xl px-4 py-6 lg:px-6 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
           <div className="w-full">
-            <div className="aspect-video bg-gradient-to-br from-[#909d7b] to-[#675444] rounded-lg flex items-center justify-center">
-              <div className="text-center text-white">
-                <h3 className="text-xl font-bold mb-2">Gameplay Video</h3>
-                <p className="text-sm opacity-90">Kommt bald!</p>
-              </div>
+            <div className="aspect-video rounded-lg overflow-hidden">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
+                title="Growmigo Gameplay Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full border-0"
+              />
             </div>
+            <h3 className="text-lg font-semibold mt-3 text-center">
+              Gameplay Video
+            </h3>
+            <p className="text-sm text-gray-600 text-center mt-1">
+              Entdecke wie Growmigo funktioniert
+            </p>
           </div>
           <div className="w-full">
-            <div className="aspect-video bg-gradient-to-br from-[#ff914d] to-[#cc6b3a] rounded-lg flex items-center justify-center">
-              <div className="text-center text-white">
-                <h3 className="text-xl font-bold mb-2">Tutorial Video</h3>
-                <p className="text-sm opacity-90">Kommt bald!</p>
-              </div>
+            <div className="aspect-video rounded-lg overflow-hidden">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
+                title="Growmigo Tutorial Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full border-0"
+              />
             </div>
+            <h3 className="text-lg font-semibold mt-3 text-center">
+              Tutorial Video
+            </h3>
+            <p className="text-sm text-gray-600 text-center mt-1">
+              Lerne die Grundlagen der Pflanzenpflege
+            </p>
           </div>
         </div>
       </div>
