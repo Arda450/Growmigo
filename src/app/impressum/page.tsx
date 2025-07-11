@@ -5,53 +5,67 @@ export default function Impressum() {
     <div className="container mx-auto px-6 py-20 max-w-3xl bg-white">
       <SectionTitle title="Impressum" />
 
-      <section className="mb-8">
-        <h2 className="text-md font-semibold mb-4">Angaben gemäß § 5 TMG</h2>
-        <p className="mb-2">Growmigo GmbH</p>
-        <p className="mb-2">Musterstraße 123</p>
-        <p className="mb-2">12345 Musterstadt</p>
-        <p className="mb-2">Deutschland</p>
+      <section className="mb-4">
+        <h2 className="text-md font-semibold mb-2">Angaben zum Unternehmen</h2>
+        <p className="mb-1">Growmigo GmbH</p>
+        <p className="mb-1">Buckhauserstrasse 24</p>
+        <p className="mb-1">8048 Zürich</p>
+        <p className="mb-1">Schweiz</p>
       </section>
 
-      <section className="mb-8">
-        <h2 className="text-md font-semibold mb-4">Kontakt</h2>
-        <p className="mb-2">Telefon: +49 123 456789</p>
-        <p className="mb-2">E-Mail: info@growmigo.de</p>
+      <section className="mb-4">
+        <h2 className="text-md font-semibold mb-2">Kontakt</h2>
+        <p className="mb-1">Telefon: +41 44 123 45 67</p>
+        <p className="mb-1">E-Mail: growmigosae@gmail.com</p>
+        <p className="mb-1">Website: www.growmigo.ch</p>
       </section>
 
-      <section className="mb-8">
-        <h2 className="text-md font-semibold mb-4">Vertretungsberechtigte</h2>
-        <p className="mb-2">Geschäftsführer: Max Mustermann</p>
+      <section className="mb-4">
+        <h2 className="text-md font-semibold mb-2">Geschäftsführung</h2>
+        <p className="mb-1">Geschäftsführer: Leandro Oswald</p>
       </section>
 
-      <section className="mb-8">
-        <h2 className="text-md font-semibold mb-4">Registereintrag</h2>
-        <p className="mb-2">Eintragung im Handelsregister</p>
-        <p className="mb-2">Registergericht: Amtsgericht Musterstadt</p>
-        <p className="mb-2">Registernummer: HRB 12345</p>
+      <section className="mb-4">
+        <h2 className="text-md font-semibold mb-2">Handelsregistereintrag</h2>
+        <p className="mb-1">Eintragung im Handelsregister des Kantons Zürich</p>
+        <p className="mb-1">CHE-123.456.789</p>
       </section>
 
-      <section className="mb-8">
-        <h2 className="text-md font-semibold mb-4">Umsatzsteuer-ID</h2>
-        <p className="mb-2">
-          Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
-        </p>
-        <p className="mb-2">DE123456789</p>
-      </section>
-
-      <section className="mb-8">
-        <h2 className="text-md font-semibold mb-4">
-          Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
+      <section className="mb-4">
+        <h2 className="text-md font-semibold mb-2">
+          Unternehmens-Identifikationsnummer
         </h2>
-        <p className="mb-2">Max Mustermann</p>
-        <p className="mb-2">Musterstraße 123</p>
-        <p className="mb-2">12345 Musterstadt</p>
-        <p className="mb-2">Deutschland</p>
+        <p className="mb-1">UID: CHE-123.456.789</p>
+      </section>
+
+      <section className="mb-4">
+        <h2 className="text-md font-semibold mb-2">Mehrwertsteuer</h2>
+        <p className="mb-1">Mehrwertsteuernummer: CHE-123.456.789 MWST</p>
+      </section>
+
+      <section className="mb-4">
+        <h2 className="text-md font-semibold mb-2">
+          Verantwortlich für den Inhalt
+        </h2>
+        <p className="mb-1">Leandro Oswald</p>
+        <p className="mb-1">Buckhauserstrasse 24</p>
+        <p className="mb-1">8048 Zürich</p>
+        <p className="mb-1">Schweiz</p>
+      </section>
+
+      <section className="mb-4">
+        <h2 className="text-md font-semibold mb-2">Aufsichtsbehörde</h2>
+        <p className="mb-1">
+          Eidgenössischer Datenschutz- und Öffentlichkeitsbeauftragter (EDÖB)
+        </p>
+        <p className="mb-1">Feldeggweg 1</p>
+        <p className="mb-1">3003 Bern</p>
+        <p className="mb-1">Schweiz</p>
       </section>
 
       <section>
-        <h2 className="text-md font-semibold mb-4">Streitschlichtung</h2>
-        <p className="mb-4">
+        <h2 className="text-md font-semibold mb-2">Online-Streitbeilegung</h2>
+        <p className="mb-2">
           Die Europäische Kommission stellt eine Plattform zur
           Online-Streitbeilegung (OS) bereit:{" "}
           <a
@@ -60,6 +74,9 @@ export default function Impressum() {
           >
             https://ec.europa.eu/consumers/odr/
           </a>
+        </p>
+        <p className="mb-2">
+          Unsere E-Mail-Adresse finden Sie oben im Impressum.
         </p>
         <p>
           Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren

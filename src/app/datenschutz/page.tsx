@@ -43,7 +43,8 @@ export default function Datenschutz() {
           <strong>Wofür nutzen wir Ihre Daten?</strong>
           <br />
           Da wir keine Daten sammeln, nutzen wir auch keine. Unsere Website
-          dient ausschließlich der Information über Pflanzenpflege und Growmigo.
+          dient ausschliesslich der Information über Pflanzenpflege und
+          Growmigo.
         </p>
       </section>
 

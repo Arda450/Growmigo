@@ -88,10 +88,9 @@ const Vorschau = () => {
             <CarouselNext className="border-[#909d7b] text-[#909d7b] hover:bg-[#909d7b]" />
           </div>
 
-          <div className="flex justify-center lg:hidden">
-            <div className="bg-[#909d7b] text-white inline-flex p-2 text-center text-sm font-bold rounded-xl">
-              {current} / {count}
-            </div>
+          <div className="flex flex-col items-center lg:hidden">
+            {current} / {count}
+            <div className="bg-[#909d7b] w-12 inline-flex p-1 rounded-md"></div>
           </div>
         </Carousel>
       </div>

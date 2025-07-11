@@ -26,7 +26,7 @@ const AnimatedButton = forwardRef<
     const [isTouched, setIsTouched] = useState(false);
 
     const baseClasses = cn(
-      "group inline-flex items-center px-8 py-3 text-white font-fredoka font-medium text-lg md:text-xl",
+      "group inline-flex items-center px-8 py-3 text-white font-more-sugar font-medium text-lg md:text-xl",
       "bg-[#909d7b] transition-all duration-300 shadow-[6px_6px_0_#d1d5db]",
       "transform -skew-x-12 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-400",
       "active:scale-95 active:shadow-[4px_4px_0_black]", // Mobile press feedback

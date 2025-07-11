@@ -1,4 +1,27 @@
-/* 
- * More Sugar Font was removed due to commercial licensing requirements
- * Using Google Fonts alternatives instead for free commercial use
- */
+/* More Sugar Font */
+@font-face {
+  font-family: "More Sugar";
+  src: url("/fonts/MoreSugar-Regular.woff2") format("woff2"),
+    url("/fonts/MoreSugar-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "More Sugar";
+  src: url("/fonts/MoreSugar-Thin.woff2") format("woff2"),
+    url("/fonts/MoreSugar-Thin.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "More Sugar";
+  src: url("/fonts/MoreSugar-Bold.woff2") format("woff2"),
+    url("/fonts/MoreSugar-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

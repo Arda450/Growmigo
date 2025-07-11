@@ -11,8 +11,8 @@ import SectionTitle from "../ui/section-title";
 const TeamMitglieder = [
   {
     id: 1,
-    title: "Max Mustermann",
-    branche: "Programmierer",
+    title: "Sabrina Lichtsteiner",
+    branche: "Marketing & Social Media",
     image: "/images/plantpic.webp",
     alt: "Pflege deine Pflanzen",
     description:
@@ -20,8 +20,8 @@ const TeamMitglieder = [
   },
   {
     id: 2,
-    title: "Max Musterfrau",
-    branche: "Marketing",
+    title: "Diamond Ocran",
+    branche: "Games Programmer",
     image: "/images/plantpic.webp",
     alt: "Sammle Belohnungen",
     description:
@@ -29,8 +29,8 @@ const TeamMitglieder = [
   },
   {
     id: 3,
-    title: "Max Musterkind",
-    branche: "Design",
+    title: "Andrew Roth",
+    branche: "Games Artist",
     image: "/images/plantpic.webp",
     alt: "Entdecke neue Arten",
     description:
@@ -38,8 +38,8 @@ const TeamMitglieder = [
   },
   {
     id: 4,
-    title: "Max Musterenkel",
-    branche: "Marketing",
+    title: "Philippe Weber",
+    branche: "Marketing & Filmmaking",
     image: "/images/plantpic.webp",
     alt: "Entdecke mehr Artennn",
     description:
@@ -47,8 +47,8 @@ const TeamMitglieder = [
   },
   {
     id: 5,
-    title: "Max Musterurenkel",
-    branche: "Webdesign",
+    title: "Arda Karadavut",
+    branche: "Webentwickler",
     image: "/images/plantpic.webp",
     alt: "Entdecke mehr Artennnn",
     description:
@@ -56,8 +56,8 @@ const TeamMitglieder = [
   },
   {
     id: 6,
-    title: "Max Musterururenkel",
-    branche: "Programmierer2",
+    title: "Leandro Oswald",
+    branche: "Games Programmer",
     image: "/images/plantpic.webp",
     alt: "Entdecke mehr Artennnn",
     description:

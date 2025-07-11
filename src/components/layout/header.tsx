@@ -12,7 +12,7 @@ export default function Header() {
         <div>
           <Link href="/">
             <Image
-              className="w-30 h-auto sm:w-40 md:w-40 lg:w-45 xl:w-50 border-2 border-red-500"
+              className="w-30 h-auto sm:w-40 md:w-40 lg:w-45 xl:w-50"
               src="/logo.svg"
               alt="Image of the logo"
               width={120}
