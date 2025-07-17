@@ -39,7 +39,7 @@ export default function UeberDasSpiel() {
             href="https://play.google.com/store/apps"
             target="_blank"
             rel="noopener noreferrer"
-            className="font-thin"
+            className="font-medium"
           >
             Jetzt herunterladen
           </AnimatedButton>
