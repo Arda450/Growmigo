@@ -4,106 +4,106 @@ import Image from "next/image";
 const tippsList = [
   {
     id: 1,
-    title: "Die richtige Bewässerung",
+    title: "Richtig giessen",
     image: "/images/plantpic.webp",
     content:
-      "Giesse deine Pflanzen regelmässig, aber achte darauf, sie nicht zu ertränken. Die meisten Zimmerpflanzen bevorzugen es, wenn die obere Erdschicht zwischen den Wassergaben leicht antrocknet. Verwende immer zimmerwarmem Wasser und achte auf gute Drainage.",
+      "Deine Pflanzen brauchen Wasser, aber nicht zu viel! Fühle mit dem Finger in die Erde - ist sie trocken, dann gib Wasser dazu. Zu viel Wasser macht die Wurzeln kaputt. Verwende warmes Wasser, das ist am besten für deine grünen Freunde.",
   },
   {
     id: 2,
-    title: "Optimales Licht finden",
+    title: "Das perfekte Licht",
     image: "/images/plantpic.webp",
     content:
-      "Beobachte das Licht in deinem Zuhause und platziere deine Pflanzen entsprechend ihrer Bedürfnisse. Pflanzen mit bunten Blättern benötigen oft mehr Licht, während Grünpflanzen auch mit weniger Licht auskommen können. Vermeide direkte Sonneneinstrahlung für empfindliche Arten.",
+      "Pflanzen sind wie Menschen - sie brauchen Licht zum Leben! Stelle deine Pflanzen an ein helles Fenster, aber nicht direkt in die pralle Sonne. Bunte Blätter brauchen mehr Licht, grüne Blätter kommen auch mit weniger Licht zurecht.",
   },
   {
     id: 3,
-    title: "Richtige Düngung",
+    title: "Pflanzen-Futter geben",
     image: "/images/plantpic.webp",
     content:
-      "Während der Wachstumsphase im Frühling und Sommer solltest du deine Pflanzen alle 2-4 Wochen düngen. Im Winter benötigen die meisten Pflanzen weniger oder gar keinen Dünger. Verwende lieber einen schwächeren Dünger öfter als einen starken selten.",
+      "Im Frühling und Sommer haben deine Pflanzen Hunger! Gib ihnen alle 2-4 Wochen ein bisschen Pflanzenfutter (Dünger). Im Winter brauchen sie weniger oder gar kein Futter. Lieber wenig und öfter als viel auf einmal.",
   },
   {
     id: 4,
-    title: "Auf Schädlinge achten",
+    title: "Kleine Tierchen entdecken",
     image: "/images/plantpic.webp",
     content:
-      "Prüfe regelmässig die Unter- und Oberseite der Blätter auf Schädlinge. Zu den häufigsten Schädlingen gehören Spinnmilben, Blattläuse und Thripse. Behandle befallene Pflanzen sofort und halte sie von anderen Pflanzen getrennt, um eine Ausbreitung zu verhindern.",
+      "Manchmal kommen winzige Käfer oder Spinnen auf deine Pflanzen. Schaue regelmässig unter die Blätter - entdeckst du kleine Tierchen? Dann musst du sie schnell behandeln und die Pflanze von anderen trennen, damit sie sich nicht ausbreiten.",
   },
   {
     id: 5,
-    title: "Richtiges Umtopfen",
+    title: "Ein neues Zuhause geben",
     image: "/images/plantpic.webp",
     content:
-      "Topfe deine Pflanzen um, wenn die Wurzeln aus den Abflusslöchern wachsen oder die Pflanze nicht mehr wächst. Der neue Topf sollte nur etwa 2-3 cm grösser im Durchmesser sein. Verwende frische, qualitativ hochwertige Erde und topfe am besten im Frühjahr um.",
+      "Wird deine Pflanze zu gross für ihren Topf? Dann braucht sie ein neues Zuhause! Nimm einen Topf, der nur ein bisschen grösser ist. Verwende frische Erde und mache das am besten im Frühling, wenn die Pflanzen wieder wachsen wollen.",
   },
   {
     id: 6,
-    title: "Luftfeuchtigkeit erhöhen",
+    title: "Feuchte Luft schaffen",
     image: "/images/plantpic.webp",
     content:
-      "Viele Zimmerpflanzen stammen aus tropischen Regionen und lieben eine hohe Luftfeuchtigkeit. Stelle einen Luftbefeuchter auf, gruppiere deine Pflanzen oder stelle sie auf Schalen mit Wasser und Kieselsteinen, um die Luftfeuchtigkeit zu erhöhen.",
+      "Pflanzen mögen feuchte Luft, genau wie im Regenwald! Du kannst eine Schale mit Wasser neben deine Pflanzen stellen oder sie zusammen gruppieren. So fühlen sie sich richtig wohl und wachsen besser.",
   },
   {
     id: 7,
-    title: "Richtige Temperatur",
+    title: "Die richtige Temperatur",
     image: "/images/plantpic.webp",
     content:
-      "Die meisten Zimmerpflanzen fühlen sich bei 18-24°C am wohlsten. Vermeide extreme Temperaturschwankungen und stelle Pflanzen nicht direkt neben Heizkörper oder Klimaanlagen. Nachts darf es etwas kühler sein - das fördert sogar das Wachstum vieler Arten.",
+      "Pflanzen mögen es nicht zu heiss und nicht zu kalt - genau wie du! 18-24°C ist perfekt. Stelle sie nicht direkt neben die Heizung oder Klimaanlage. Nachts darf es etwas kühler sein - das ist sogar gut für sie!",
   },
   {
     id: 8,
-    title: "Blätter regelmässig reinigen",
+    title: "Blätter sauber machen",
     image: "/images/plantpic.webp",
     content:
-      "Staub blockiert die Poren der Blätter und hindert die Photosynthese. Wische die Blätter wöchentlich mit einem feuchten Tuch ab oder dusche sie sanft ab. Bei behaarten Blättern verwende einen weichen Pinsel. Saubere Blätter sehen nicht nur schöner aus, sondern sind auch gesünder.",
+      "Staubige Blätter können nicht richtig atmen! Wische sie einmal pro Woche mit einem feuchten Tuch ab oder dusche sie sanft ab. Bei flauschigen Blättern verwende einen weichen Pinsel. Saubere Blätter sind glückliche Blätter!",
   },
   {
     id: 9,
-    title: "Winterpflege beachten",
+    title: "Winter-Pflege",
     image: "/images/plantpic.webp",
     content:
-      "Im Winter brauchen Pflanzen weniger Wasser und Dünger, da sie langsamer wachsen. Reduziere die Wassergaben und stelle sie an hellere Plätze, da die Tage kürzer sind. Viele Pflanzen benötigen eine Ruhephase - das ist völlig normal und wichtig für ihre Gesundheit.",
+      "Im Winter schlafen deine Pflanzen fast - genau wie Bären! Sie brauchen weniger Wasser und kein Futter. Stelle sie an hellere Plätze, weil die Tage kürzer sind. Keine Sorge, wenn sie langsamer wachsen - das ist normal!",
   },
   {
     id: 10,
-    title: "Früherkennung von Problemen",
+    title: "Hilfe-Signale verstehen",
     image: "/images/plantpic.webp",
     content:
-      "Gelbe Blätter können Überwässerung bedeuten, braune Spitzen deuten auf niedrige Luftfeuchtigkeit hin. Hängende Blätter signalisieren meist Wassermangel. Lerne die Signale deiner Pflanzen zu verstehen - sie zeigen dir, was sie brauchen.",
+      "Deine Pflanzen sprechen mit dir! Gelbe Blätter sagen &apos;zu viel Wasser&apos;, braune Spitzen bedeuten &apos;ich brauche mehr feuchte Luft&apos;, hängende Blätter rufen &apos;Durst!&apos;. Lerne ihre Sprache und sie werden dir zeigen, was sie brauchen.",
   },
   {
     id: 11,
-    title: "Richtige Erde wählen",
+    title: "Die beste Erde aussuchen",
     image: "/images/plantpic.webp",
     content:
-      "Verwende qualitativ hochwertige Blumenerde mit guter Drainage. Sukkulenten und Kakteen benötigen spezielle Kakteenerde, während tropische Pflanzen nährstoffreiche, feuchtigkeitsspeichernde Erde bevorzugen. Mische bei Bedarf Perlite oder Sand unter für bessere Drainage.",
+      "Gute Erde ist wie ein gemütliches Bett für deine Pflanzen! Kaufe gute Blumenerde im Geschäft. Kakteen brauchen spezielle Kakteen-Erde, andere Pflanzen mögen normale Blumenerde. Gute Erde hilft beim Wachsen!",
   },
   {
     id: 12,
-    title: "Pflanzen vermehren",
+    title: "Neue Pflanzen züchten",
     image: "/images/plantpic.webp",
     content:
-      "Viele Zimmerpflanzen lassen sich leicht durch Stecklinge vermehren. Schneide gesunde Triebe ab, stelle sie in Wasser bis Wurzeln wachsen, dann topfe sie ein. So kannst du deine Pflanzensammlung erweitern oder Freunden eine Freude machen.",
+      "Du kannst aus einer Pflanze viele machen! Schneide einen gesunden Ast ab, stelle ihn in Wasser bis kleine Wurzeln wachsen, dann pflanze ihn in einen Topf. So kannst du Freunden oder Familie neue Pflanzen schenken!",
   },
 ];
 
 export default function TippsSection() {
   return (
     <section id="tipps" className="py-20 px-6 max-w-7xl mx-auto">
-      <SectionTitle title="Pflegetipps für deine Pflanzen" />
+      <SectionTitle title="Wie du deine Pflanzen glücklich machst" />
 
-      <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10">
-        Hier findest du hilfreiche Tipps, um deine Growmigo-Pflanzen und deine
-        echten Zimmerpflanzen gesund und glücklich zu halten. Mit der richtigen
-        Pflege werden deine grünen Freunde gedeihen!
+      <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10 text-lg">
+        Hier lernst du, wie du deine Growmigo-Pflanzen und deine echten
+        Zimmerpflanzen richtig pflegst! Mit diesen einfachen Tipps werden deine
+        grünen Freunde gross und stark. Los geht&apos;s!
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
         {tippsList.map((tipp) => (
           <div
             key={tipp.id}
-            className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
+            className="bg-[#909d7b] rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
           >
             <div className="relative h-48 w-full">
               <Image
@@ -114,10 +114,10 @@ export default function TippsSection() {
               />
             </div>
             <div className="p-5">
-              <h3 className="font-bold text-xl mb-3 text-[#422b1c]">
+              <h3 className="font-bold text-xl mb-3 text-white">
                 {tipp.title}
               </h3>
-              <p className="text-gray-600">{tipp.content}</p>
+              <p className="text-sm text-white">{tipp.content}</p>
             </div>
           </div>
         ))}

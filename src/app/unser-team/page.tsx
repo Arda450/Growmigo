@@ -1,4 +1,4 @@
-import TeamMitglieder from "@/components/sections/team-mitglieder";
+import TeamMitglieder from "@/components/sections/unser-team";
 
 export default function UnserTeamPage() {
   return (
