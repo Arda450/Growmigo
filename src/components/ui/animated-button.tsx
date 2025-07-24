@@ -26,12 +26,12 @@ const AnimatedButton = forwardRef<
     const [isTouched, setIsTouched] = useState(false);
 
     const baseClasses = cn(
-      "group inline-flex items-center px-8 py-3 text-white font-more-sugar font-medium text-lg md:text-xl",
-      "bg-[#909d7b] transition-all duration-300 shadow-[6px_6px_0_#d1d5db]",
+      "group inline-flex items-center px-4 py-2 text-white font-more-sugar font-medium text-lg md:text-xl",
+      "bg-[#92a07d] transition-all duration-300 shadow-[6px_6px_0_#422b1c] rounded-lg",
       "transform -skew-x-12 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-400",
       "active:scale-95 active:shadow-[4px_4px_0_black]", // Mobile press feedback
       // Hover effects für Desktop
-      "hover:bg-[#ff914d] hover:shadow-[10px_10px_0_#422b1c] hover:duration-300",
+      "hover:bg-[#909d7b] hover:shadow-[10px_10px_0_#422b1c] hover:duration-300",
       // Touch/pressed state
       isPressed && "shadow-[8px_8px_0_#422b1c] scale-[0.98]",
       isTouched && "shadow-[8px_8px_0_#422b1c]",

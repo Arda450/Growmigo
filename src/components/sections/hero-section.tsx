@@ -3,34 +3,42 @@ import AnimatedButton from "../ui/animated-button";
 
 export default function HeroSection() {
   return (
-    <section id="hero" className="relative w-full overflow-hidden">
-      {/* Hintergrundbild über die gesamte Breite und beginnt am oberen Rand der Seite */}
-      <div className="absolute top-0 inset-x-0 w-full h-[400px] -z-10">
-        <Image
-          src="/images/plantpic.webp"
-          alt="Hero Image"
-          fill
-          className="object-cover"
-          priority
-        />
-        {/*Dunkler Overlay für bessere Lesbarkeit */}
-        <div className="absolute inset-0 bg-black/20"></div>
-      </div>
+    <>
+      <section id="hero" className="relative w-full overflow-hidden">
+        {/* Hintergrundbild über die gesamte Breite und beginnt am oberen Rand der Seite */}
+        <div className="absolute top-0 inset-x-0 w-full h-[400px] -z-10">
+          <Image
+            src="/images/hero-section/hero-section.png"
+            alt="Hero Image"
+            fill
+            className="object-cover scale-150 sm:scale-130 md:scale-100 object-center"
+            priority
+          />
+          {/*Dunkler Overlay für bessere Lesbarkeit */}
+          <div className="absolute inset-0"></div>
+        </div>
 
-      <div className="h-[400px] max-w-7xl  mx-auto flex flex-col justify-end">
-        <div className="flex flex-col gap-4 px-4 md:py-8 mb-6 max-w-7xl mx-auto w-full">
-          {/* <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-            Growmigo
-          </h1> */}
-          <p className="text-lg md:text-2xl text-white mb-6">
-            Erkunde, pflanze, wachse - dein botanisches Abenteuer beginnt jetzt.
-          </p>
+        <div className="h-[400px] max-w-7xl mx-auto flex flex-col justify-center">
+          {/* Hero Section ohne Slogan */}
+        </div>
+      </section>
 
-          <div className="mt-2">
-            <AnimatedButton href="#projekt">ERKUNDEN</AnimatedButton>
+      {/* Orange Slogan Section */}
+      <section className="w-full bg-[#ff914d] py-6 md:py-8 lg:py-12">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-8">
+            <div className="flex-shrink-0">
+              <AnimatedButton href="#projekt">ERKUNDEN</AnimatedButton>
+            </div>
+            <div className="flex-1 text-left">
+              <p className="text-lg sm:text-xl md:text-2xl text-white font-medium leading-relaxed">
+                Die App, die mitwächst. Pflanzenpflege zum Spielen, Lernen und
+                Staunen.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

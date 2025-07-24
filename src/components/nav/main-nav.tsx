@@ -19,7 +19,7 @@ export default function MainNav({ className }: { className?: string }) {
         <Link
           key={`nav-${item.href}`}
           href={item.href}
-          className={`text-xl font-fredoka px-3 py-1 hover:bg-[#422b1c] hover:text-white transition ${
+          className={`text-xl font-fredoka px-3 py-1 hover:bg-[#422b1c] hover:text-white transition rounded-lg ${
             isHomePage ? "text-white" : "text-black"
           }`}
         >

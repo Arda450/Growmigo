@@ -4,7 +4,7 @@ export default function Projekt() {
   return (
     <section
       id="projekt"
-      className="flex flex-col mx-auto font-bold bg-[#909d7b] text-white"
+      className="flex flex-col mx-auto font-bold bg-[#92a07d] text-white"
     >
       <SectionTitle title="Über unser Projekt" />
 

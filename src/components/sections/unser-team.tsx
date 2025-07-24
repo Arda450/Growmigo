@@ -70,7 +70,7 @@ export default function UnserTeam() {
     <section id="unser-team" className="w-full py-20 px-6">
       <SectionTitle title="Unser Team" />
       <div className="container px-4 mx-auto">
-        <div className="flex flex-wrap items-start justify-center gap-x-16 max-w-4xl mx-auto">
+        <div className="flex flex-wrap items-start justify-center gap-x-16 gap-y-10 max-w-4xl mx-auto">
           {TeamMitglieder.map((item, index) => (
             <div
               key={item.id}

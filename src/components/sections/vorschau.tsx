@@ -15,27 +15,21 @@ import { useEffect, useState } from "react";
 const vorschauItems = [
   {
     id: 1,
-    image: "/images/plantpic.webp",
+    image: "/images/vorschau/vorschau1.png",
     alt: "Pflege deine Pflanzen",
     title: "Pflege deine Pflanzen",
   },
   {
     id: 2,
-    image: "/images/plantpic.webp",
+    image: "/images/vorschau/vorschau2.png",
     alt: "Sammle Belohnungen",
     title: "Sammle Belohnungen",
   },
   {
     id: 3,
-    image: "/images/plantpic.webp",
+    image: "/images/vorschau/vorschau3.png",
     alt: "Entdecke neue Arten",
     title: "Entdecke neue Arten",
-  },
-  {
-    id: 4,
-    image: "/images/plantpic.webp",
-    alt: "Entdecke mehr Artennn",
-    title: "Entdecke mehr Artennn",
   },
 ];
 
@@ -59,7 +53,7 @@ const Vorschau = () => {
   }, [api]);
 
   return (
-    <section id="vorschau" className="bg-slate-300/50 font-bold">
+    <section id="vorschau" className=" font-bold">
       <SectionTitle title="Vorschau des Spiels" />
 
       <div className=" max-w-[95%] md:max-w-2xl lg:max-w-3xl mx-auto px-2 w-[450px]:px-6 md:px-2">
@@ -74,7 +68,7 @@ const Vorschau = () => {
                       src={item.image}
                       alt={item.alt}
                       fill
-                      className="object-cover"
+                      className="object-cover scale-300 object-center"
                     />
                   </div>
                   <h3 className="mt-2 font-medium text-center">{item.title}</h3>

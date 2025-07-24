@@ -124,7 +124,7 @@ export default function ContactForm() {
             isLoading={isLoading}
             text="Nachricht senden"
             loadingText="Wird gesendet..."
-            className=" bg-[#ff914d] hover:bg-[#909d7b] font-bold py-4 px-6 shadow-lg hover:shadow-xl transform hover:scale-105 duration-200 mt-6"
+            className=" bg-[#f9a20c] hover:bg-[#92a07d] font-bold py-4 px-6 shadow-lg hover:shadow-xl transform hover:scale-105 duration-200 mt-6"
           />
         </form>
       </Form>

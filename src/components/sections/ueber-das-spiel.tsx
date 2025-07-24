@@ -1,5 +1,6 @@
 import SectionTitle from "../ui/section-title";
 import AnimatedButton from "../ui/animated-button";
+import Image from "next/image";
 
 export default function UeberDasSpiel() {
   return (
@@ -11,60 +12,59 @@ export default function UeberDasSpiel() {
 
       <div className="max-w-7xl mx-auto text-lg">
         <p>
-          Willkommen bei Growmigo – dem entspannten Spiel, in dem du liebevoll
-          deine eigenen virtuellen Pflanzen pflegst. Ob kleine Sukkulente, bunte
-          Blume oder exotischer Farn – jede Pflanze braucht deine
-          Aufmerksamkeit, um zu wachsen und zu gedeihen.
+          Willkommen bei Growmigo – deine Pflanze braucht dich! Mit Growmigo
+          pflegst du eine echte Pflanze – und begleitest sie in der App. Du
+          giesst, schaust nach ihr, hilfst ihr beim Wachsen und lernst ganz
+          nebenbei, was Pflanzen brauchen, um stark und gesund zu werden.
         </p>
 
         <p>
-          Giesse regelmässig, halte die Blätter gesund, entdecke neue
-          Pflanzenarten und sammle Belohnungen für gute Pflege. Je besser du
-          dich um deine grünen Freunde kümmerst, desto schöner blühen sie auf!
+          Ob Tomate, Minze oder Erdbeere – jede Pflanze reagiert auf deine
+          Pflege. In der App zeigt sie dir, wie es ihr geht: Ist sie glücklich,
+          durstig oder braucht sie Hilfe? Wenn du gut auf sie achtest, wirst du
+          mit frischem Wachstum – und sogar einer kleinen Ernte – belohnt!
         </p>
 
         <p className="mb-10">
-          Perfekt für zwischendurch – ohne Stress, aber mit ganz viel Herz.
+          Growmigo macht Spass und zeigt dir, wie schön es ist, Verantwortung zu
+          übernehmen – Tag für Tag.
         </p>
 
-        <p>
-          Lade Growmigo jetzt herunter und starte dein eigenes kleines
-          Pflanzenparadies. Ganz ohne grünen Daumen – aber mit ganz viel Liebe.
-        </p>
+        {/* ssssssssssssssssssssssssssssssssssssssssssssssssssssss */}
+        <div className="">
+          <div className="flex flex-col gap-4">
+            <p>
+              Teste Growmigo 30 Tage kostenlos Hol dir das Starterkit für noch
+              mehr Pflanzenspass – oder leg direkt los im App Store!
+            </p>
 
-        <p>Einfach klicken und kostenlos downloaden!</p>
+            <p>Jetzt downloaden und dein Pflanzenabenteuer starten.</p>
+          </div>
 
-        <div className="my-6 flex flex-col sm:flex-row gap-4">
-          <AnimatedButton
-            href="https://play.google.com/store/apps"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-thin"
-          >
-            Jetzt herunterladen
-          </AnimatedButton>
-          {/* <a
-            href="https://play.google.com/store/apps"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-green-600 hover:bg-green-700 text-white font-bold text-md sm:text-lg py-3 sm:py-3 px-6 sm:px-6 sm:rounded-xl rounded-lg flex items-center justify-center transition-colors duration-200 w-fit mx-auto sm:mx-0"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 mr-2"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+          {/* Button und Maskottchen nebeneinander */}
+          <div className="my-6 flex flex-row items-center justify-between gap-6">
+            <div className="flex-shrink-0">
+              <AnimatedButton
+                href="https://play.google.com/store/apps"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-fit font-thin text-base sm:text-lg md:text-xl"
+              >
+                Jetzt herunterladen
+              </AnimatedButton>
+            </div>
+
+            {/* Maskottchen rechts */}
+            <div className="flex-shrink-0">
+              <Image
+                src="/images/ueber-das-spiel/growmigo-mascot.png"
+                alt="Growmigo Maskottchen"
+                width={150}
+                height={150}
+                className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-52 lg:h-52 object-contain"
               />
-            </svg>
-            <span className="whitespace-nowrap">Jetzt herunterladen</span>
-          </a> */}
+            </div>
+          </div>
         </div>
       </div>
     </section>

@@ -33,7 +33,7 @@ const footerItems = [
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#675444] text-white">
+    <footer className="w-full bg-[#422b1c] text-white">
       {/* sm icons */}
       <div className="w-full py-8 px-8  flex justify-center">
         <p className=" text-gray-300 mr-8">Folge uns!</p>
