@@ -5,7 +5,7 @@ interface SectionTitleProps {
 
 export default function SectionTitle({
   title,
-  className = "text-lg font-more-sugar py-12 sm:text-2xl md:text-3xl text-center px-4 tracking-wide",
+  className = "text-xl font-more-sugar py-12 sm:text-2xl md:text-3xl text-center px-4 tracking-wide",
 }: SectionTitleProps) {
   return <h2 className={className}>{title}</h2>;
 }
