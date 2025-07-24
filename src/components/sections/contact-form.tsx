@@ -67,7 +67,7 @@ export default function ContactForm() {
   return (
     <section
       id="contact"
-      className="flex flex-col lg:flex-row px-4 lg:px-10 items-start justify-center gap-20 py-8 font-bold"
+      className="flex flex-col lg:flex-row px-4 lg:px-10 items-start justify-center gap-20 font-bold pb-12"
     >
       <div className="flex flex-col items-center gap-4 w-full">
         <SectionTitle title="Kontaktieren Sie uns" />
@@ -79,7 +79,7 @@ export default function ContactForm() {
 
       <Form {...form}>
         <form
-          className="w-full p-4 bg-gray-100 rounded-lg shadow-md"
+          className="w-full p-4 m-6 bg-gray-100 rounded-lg shadow-md"
           onSubmit={form.handleSubmit(onSubmit)}
         >
           <div className=" flex flex-col gap-6">

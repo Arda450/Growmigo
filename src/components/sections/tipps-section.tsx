@@ -90,7 +90,7 @@ const tippsList = [
 
 export default function TippsSection() {
   return (
-    <section id="tipps" className="py-20 px-6 max-w-7xl mx-auto">
+    <section id="tipps" className="px-6 max-w-7xl mx-auto pb-12">
       <SectionTitle title="Wie du deine Pflanzen glücklich machst" />
 
       <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10 text-lg">

@@ -6,7 +6,7 @@ export default function UeberDasSpiel() {
   return (
     <section
       id="ueber-das-spiel"
-      className="flex flex-col space-y-4 px-4 lg:px-10 mx-auto font-bold"
+      className="flex flex-col px-4 lg:px-10 mx-auto font-bold pb-12"
     >
       <SectionTitle title="Über das Spiel" />
 
@@ -42,7 +42,7 @@ export default function UeberDasSpiel() {
           </div>
 
           {/* Button und Maskottchen nebeneinander */}
-          <div className="my-6 flex flex-row items-center justify-between gap-6">
+          <div className="my-6 flex flex-row items-end sm:items-center justify-between gap-6">
             <div className="flex-shrink-0">
               <AnimatedButton
                 href="https://play.google.com/store/apps"
