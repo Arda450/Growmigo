@@ -13,7 +13,7 @@ const TeamMitglieder = [
     id: 1,
     title: "Sabrina Lichtsteiner",
     branche: "Marketing & Social Media",
-    image: "/images/plantpic.webp",
+    image: "/images/mitglieder/sabrina-lichtsteiner.jpg",
     alt: "Beschreibung des Teammitglieds Sabrina Lichtsteiner",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
@@ -22,7 +22,7 @@ const TeamMitglieder = [
     id: 2,
     title: "Diamond Ocran",
     branche: "Games Programmer",
-    image: "/images/plantpic.webp",
+    image: "/images/mitglieder/diamond-ocran.jpg",
     alt: "Beschreibung des Teammitglieds Diamond Ocran",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
@@ -31,7 +31,7 @@ const TeamMitglieder = [
     id: 3,
     title: "Andrew Roth",
     branche: "Games Artist",
-    image: "/images/plantpic.webp",
+    image: "/images/mitglieder/andrew-roth.jpg",
     alt: "Beschreibung des Teammitglieds Andrew Roth",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
@@ -40,7 +40,7 @@ const TeamMitglieder = [
     id: 4,
     title: "Philippe Weber",
     branche: "Marketing & Filmmaking",
-    image: "/images/plantpic.webp",
+    image: "/images/mitglieder/philippe-weber.jpg",
     alt: "Beschreibung des Teammitglieds Philippe Weber",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
@@ -49,7 +49,7 @@ const TeamMitglieder = [
     id: 5,
     title: "Leandro Oswald",
     branche: "Games Programmer",
-    image: "/images/plantpic.webp",
+    image: "/images/mitglieder/leandro-oswald.jpg",
     alt: "Beschreibung des Teammitglieds Leandro Oswald",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
@@ -58,7 +58,7 @@ const TeamMitglieder = [
     id: 6,
     title: "Arda Karadavut",
     branche: "Webentwickler",
-    image: "/images/plantpic.webp",
+    image: "/images/mitglieder/arda-karadavut.jpg",
     alt: "Beschreibung des Teammitglieds Arda Karadavut",
     description:
       "Webentwickler-Student an der SAE Zürich mit Spezialisierung auf moderne Frontend- und Backend-Technologien. Arda hat die Growmigo-Website von Grund auf mit Next.js und Tailwind CSS entwickelt. Seine fundierte Expertise in Fullstack-Entwicklung bildet das technische Fundament für unsere digitale Plattform.",
@@ -79,7 +79,7 @@ export default function UnserTeam() {
               }`}
             >
               <Card className="w-[300px] border-0 shadow-md overflow-hidden bg-[#909d7b] flex flex-col">
-                <div className="relative h-[250px] w-full flex-shrink-0">
+                <div className="relative h-[300px] w-full flex-shrink-0">
                   <Image
                     src={item.image}
                     alt={item.alt}
