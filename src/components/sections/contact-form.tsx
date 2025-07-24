@@ -67,7 +67,7 @@ export default function ContactForm() {
   return (
     <section
       id="contact"
-      className="flex flex-col lg:flex-row px-4 lg:px-10 items-start justify-center gap-20 font-bold pb-12"
+      className="flex flex-col lg:flex-row px-4 lg:px-10 items-center lg:items-start justify-center gap-20 font-bold pb-12"
     >
       <div className="flex flex-col items-center gap-4 w-full">
         <SectionTitle title="Kontaktieren Sie uns" />
