@@ -31,7 +31,7 @@ const TeamMitglieder = [
     id: 3,
     title: "Andrew Roth",
     branche: "Games Artist",
-    image: "/images/mitglieder/andrew-roth.jpg",
+    image: "/images/ueber-das-spiel/growmigo-mascot.png",
     alt: "Beschreibung des Teammitglieds Andrew Roth",
     description:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
@@ -67,7 +67,7 @@ const TeamMitglieder = [
 
 export default function UnserTeam() {
   return (
-    <section id="unser-team" className="w-full px-6 pb-12">
+    <section id="unser-team" className="w-full py-12">
       <SectionTitle title="Unser Team" />
       <div className="container px-4 mx-auto">
         <div className="flex flex-wrap items-start justify-center gap-x-16 gap-y-10 max-w-4xl mx-auto">
