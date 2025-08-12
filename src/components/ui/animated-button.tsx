@@ -27,14 +27,22 @@ const AnimatedButton = forwardRef<
 
     const baseClasses = cn(
       "group inline-flex items-center px-4 py-2 text-white font-more-sugar font-medium text-lg md:text-xl",
-      "bg-[#92a07d] transition-all duration-300 shadow-[6px_6px_0_#422b1c] rounded-lg",
-      "transform -skew-x-12 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-400",
-      "active:scale-95 active:shadow-[4px_4px_0_black]", // Mobile press feedback
-      // Hover effects für Desktop
-      "hover:bg-[#909d7b] hover:shadow-[10px_10px_0_#422b1c] hover:duration-300",
-      // Touch/pressed state
-      isPressed && "shadow-[8px_8px_0_#422b1c] scale-[0.98]",
-      isTouched && "shadow-[8px_8px_0_#422b1c]",
+      "bg-[#92a07d] transition-all duration-300 rounded-lg transform -skew-x-12 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-400",
+
+      // Mobile: minimal/kein Schatten
+      "shadow-none",
+
+      // Ab md: schwere Box-Shadows aktivieren
+      "md:shadow-[6px_6px_0_#422b1c]",
+
+      // Press/Hover nur ab md
+      "active:scale-95 md:active:shadow-[4px_4px_0_#422b1c]",
+      "md:hover:bg-[#909d7b] md:hover:shadow-[10px_10px_0_#422b1c] md:hover:duration-300",
+
+      // Zustände nur ab md schwer machen
+      isPressed && "md:shadow-[8px_8px_0_#422b1c] md:scale-[0.98]",
+      isTouched && "md:shadow-[8px_8px_0_#422b1c]",
+
       variant === "secondary" && "bg-gray-700",
       className
     );

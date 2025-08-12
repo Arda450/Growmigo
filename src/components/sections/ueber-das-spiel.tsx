@@ -34,7 +34,7 @@ export default function UeberDasSpiel() {
         <div className="">
           <div className="flex flex-col gap-4">
             <p>
-              Teste Growmigo 30 Tage kostenlos Hol dir das Starterkit für noch
+              Teste Growmigo 30 Tage kostenlos. Hol dir das Starterkit für noch
               mehr Pflanzenspass – oder leg direkt los im App Store!
             </p>
 

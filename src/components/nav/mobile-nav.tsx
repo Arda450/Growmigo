@@ -120,6 +120,7 @@ export function MobileNav() {
                 <SheetClose key={item.href} asChild>
                   <Link
                     href={item.href}
+                    prefetch={false}
                     className={`flex items-center gap-3 p-3 rounded-lg transition-all duration-200 text-lg font-medium ${
                       pathname === item.href
                         ? "bg-[#422b1c] text-white shadow-lg"
@@ -155,6 +156,7 @@ export function MobileNav() {
                 <SheetClose key={item.href} asChild>
                   <Link
                     href={item.href}
+                    prefetch={false}
                     className="text-[#422b1c] hover:text-[#2d1f15] transition-colors hover:underline"
                   >
                     {item.label}

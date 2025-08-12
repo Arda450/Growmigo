@@ -150,7 +150,7 @@ export default function Datenschutz() {
         <p className="mb-4">
           Growmigo Team
           <br />
-          E-Mail: info@growmigo.ch
+          E-Mail: growmigosae@gmail.com
         </p>
 
         <p className="mb-4">

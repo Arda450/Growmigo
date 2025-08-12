@@ -16,7 +16,7 @@ const TeamMitglieder = [
     image: "/images/mitglieder/sabrina-lichtsteiner.jpg",
     alt: "Beschreibung des Teammitglieds Sabrina Lichtsteiner",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+      "Sabrina studiert Marketing & Social Media und war für die schriftlichen Abgaben sowie die Vorbereitung der Präsentationen verantwortlich. Sie entwickelte unseren Social‑Media‑Auftritt (Content‑Strategie, Redaktionsplan, Tonalität und Visuals) und stellte sicher, dass unsere Botschaften klar, zielgruppengerecht und konsistent kommuniziert werden.",
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const TeamMitglieder = [
     image: "/images/mitglieder/diamond-ocran.jpg",
     alt: "Beschreibung des Teammitglieds Diamond Ocran",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+      "Diamond ist Games‑Programmer und entwickelte gemeinsam mit Leandro das Spiel. Er implementierte Kern‑Gameplay‑Logik und Systeme in Unity/C#, optimierte die Performance und führte Prototypen bis zum spielbaren Stand. Zusätzlich kümmerte er sich um UI‑/Feedback‑Integration und saubere, erweiterbare Code‑Strukturen.",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const TeamMitglieder = [
     image: "/images/ueber-das-spiel/growmigo-mascot.png",
     alt: "Beschreibung des Teammitglieds Andrew Roth",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+      "Andrew ist 3D Game Artist und verantwortete die kreativen Inhalte seines Fachbereichs, einschliesslich der kinderfreundlichen Gestaltung. Er entwickelte die 3D-Assets von der Idee bis zur finalen Umsetzung mit Tools wie Blender, Substance Painter, Photoshop, Unity und KI-Anwendungen.",
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const TeamMitglieder = [
     image: "/images/mitglieder/philippe-weber.jpg",
     alt: "Beschreibung des Teammitglieds Philippe Weber",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+      "Philippe studiert Film/Video und war neben den schriftlichen Abgaben für die Konzeption und Produktion der Marketing‑Videos zuständig.",
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const TeamMitglieder = [
     image: "/images/mitglieder/leandro-oswald.jpg",
     alt: "Beschreibung des Teammitglieds Leandro Oswald",
     description:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.",
+      "Leandro ist Games-Programming-Student an der SAE Zürich und spezialisiert auf die Entwicklung mit Unity und Unreal Engine. Mit Erfahrung in C#, C++, und Blueprints bringt er technisches Know-how in die App-Entwicklung ein.",
   },
   {
     id: 6,
@@ -61,7 +61,7 @@ const TeamMitglieder = [
     image: "/images/mitglieder/arda-karadavut.jpg",
     alt: "Beschreibung des Teammitglieds Arda Karadavut",
     description:
-      "Webentwickler-Student an der SAE Zürich mit Spezialisierung auf moderne Frontend- und Backend-Technologien. Arda hat die Growmigo-Website von Grund auf mit Next.js und Tailwind CSS entwickelt. Seine fundierte Expertise in Fullstack-Entwicklung bildet das technische Fundament für unsere digitale Plattform.",
+      "Webentwickler-Student an der SAE Zürich mit Spezialisierung auf moderne Frontend- und Backend-Technologien. Arda hat die Growmigo-Website von Grund auf mit Next.js und Tailwind CSS entwickelt.",
   },
 ];
 
