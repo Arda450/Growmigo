@@ -20,6 +20,7 @@ import Link from "next/link";
 import { useNav } from "@/hooks/use-nav";
 import { usePathname } from "next/navigation";
 import { OpenMoji } from "@/components/ui/openmoji";
+import Image from "next/image";
 
 const navItems = [
   { href: "/", label: "Home", icon: <Home className="h-5 w-5" /> },
@@ -109,8 +110,14 @@ export function MobileNav() {
 
         <div className="flex flex-col h-full">
           <SheetHeader className="px-6 py-4 border-b border-white/20 bg-white/10">
-            <SheetTitle className="text-2xl font-bold text-[#422b1c] text-left">
-              Growmigo
+            <SheetTitle className="flex justify-center">
+              <Image
+                src="/logo.svg"
+                alt="Growmigo Logo"
+                width={120}
+                height={40}
+                className="h-10 w-auto"
+              />
             </SheetTitle>
           </SheetHeader>
 
