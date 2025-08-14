@@ -30,7 +30,6 @@ export default function UeberDasSpiel() {
           übernehmen – Tag für Tag.
         </p>
 
-        {/* ssssssssssssssssssssssssssssssssssssssssssssssssssssss */}
         <div className="">
           <div className="flex flex-col gap-4">
             <p>
@@ -54,7 +53,7 @@ export default function UeberDasSpiel() {
               </AnimatedButton>
             </div>
 
-            {/* Maskottchen rechts */}
+            {/* maskottchen rechts */}
             <div className="flex-shrink-0">
               <Image
                 src="/images/ueber-das-spiel/growmigo-mascot.png"

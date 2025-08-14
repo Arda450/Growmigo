@@ -28,7 +28,11 @@ export default function FormInput<T extends FieldValues>({
         render={({ field }) => (
           <FormItem>
             <FormControl>
-              <Input placeholder={placeholder} {...field} />
+              <Input
+                placeholder={placeholder}
+                aria-label={label.replace(":", "")}
+                {...field}
+              />
             </FormControl>
             <FormMessage />
           </FormItem>

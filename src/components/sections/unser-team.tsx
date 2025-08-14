@@ -31,7 +31,7 @@ const TeamMitglieder = [
     id: 3,
     title: "Andrew Roth",
     branche: "Games Artist",
-    image: "/images/ueber-das-spiel/growmigo-mascot.png",
+    image: "/images/mitglieder/andrew-roth.jpg",
     alt: "Beschreibung des Teammitglieds Andrew Roth",
     description:
       "Andrew ist 3D Game Artist und verantwortete die kreativen Inhalte seines Fachbereichs, einschliesslich der kinderfreundlichen Gestaltung. Er entwickelte die 3D-Assets von der Idee bis zur finalen Umsetzung mit Tools wie Blender, Substance Painter, Photoshop, Unity und KI-Anwendungen.",
@@ -43,7 +43,7 @@ const TeamMitglieder = [
     image: "/images/mitglieder/philippe-weber.jpg",
     alt: "Beschreibung des Teammitglieds Philippe Weber",
     description:
-      "Philippe studiert Film/Video und war neben den schriftlichen Abgaben für die Konzeption und Produktion der Marketing‑Videos zuständig.",
+      "Philippe studiert Film/Video und war für die schriftlichen Abgaben sowie die Vorbereitung der Präsentationen (PowerPoint) verantwortlich. Er konzipierte und produzierte Marketing‑Videos, entwickelte visuelle Kommunikationsstrategien und sorgte für die professionelle Aufbereitung aller visuellen Inhalte des Projekts.",
   },
   {
     id: 5,

@@ -53,7 +53,6 @@ export default function ContactForm() {
       subject: `Kontaktformular: ${values.subject}`,
       text: mailText,
     });
-    // wenn die email erfolgreich gesendet wurde, wird eine toast message angezeigt
     console.log("Email response:", response);
     if (response && !("error" in response)) {
       console.log("Showing success toast");
@@ -108,7 +107,12 @@ export default function ContactForm() {
                   <FormItem>
                     <FormControl>
                       {/* verhindert das überschreiten der max länge */}
-                      <Textarea maxLength={500} {...field} />
+                      <Textarea
+                        maxLength={500}
+                        placeholder="Ihre Nachricht hier..."
+                        aria-label="Nachricht"
+                        {...field}
+                      />
                     </FormControl>
                     <div className="text-xs text-gray-500 text-right mt-1">
                       {/* zeigt die aktuelle länge der nachricht an */}

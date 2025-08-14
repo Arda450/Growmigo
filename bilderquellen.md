@@ -1,3 +1,6 @@
+hero-image.jpg:
+https://www.pexels.com/photo/person-holding-cup-with-green-plant-421999/
+
 neues-zuhause-geben.jpg:
 https://www.pexels.com/photo/person-holding-a-small-spathiphyllum-plant-4751965/
 
@@ -33,9 +36,6 @@ https://www.pexels.com/photo/green-plant-with-white-ceramic-pot-1084188/
 
 feuchte-luft-schaffen.jpg:
 https://www.pexels.com/photo/photo-of-a-smiley-face-2935956/
-
-https://www.pexels.com/photo/person-holding-cup-with-green-plant-421999/
-hero bild vlt
 
 ## Bildquellen
 

@@ -67,6 +67,7 @@ export function MobileNav() {
           className={`md:hidden p-2 hover:bg-white/20 transition-all duration-300 ${
             isHomePage ? "text-white" : "text-black"
           }`}
+          aria-label="Menü öffnen"
         >
           <Menu className="!size-8 stroke-[3]" />
         </Button>

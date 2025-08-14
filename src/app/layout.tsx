@@ -21,6 +21,22 @@ const fredoka = Fredoka({
 export const metadata: Metadata = {
   title: "Growmigo",
   description: "Unsere Wurzeln sind individuell, unser Ziel ist gemeinsam.",
+  icons: {
+    icon: [
+      {
+        url: "/favicon.svg",
+        type: "image/svg+xml",
+      },
+      {
+        url: "/favicon.ico", // Fallback für ältere Browser
+        sizes: "any",
+      },
+    ],
+    apple: {
+      url: "/favicon.svg",
+      type: "image/svg+xml",
+    },
+  },
 };
 
 export default function RootLayout({

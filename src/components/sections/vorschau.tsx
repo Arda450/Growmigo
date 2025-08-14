@@ -45,7 +45,7 @@ const CarouselPrevious = dynamic(() =>
 const vorschauItems = [
   {
     id: 1,
-    image: "/images/vorschau/growmigo1.webp",
+    image: "/images/vorschau/growmigo6.webp",
     alt: "Growmigo Startbildschirm mit Pflanzentöpfen und Benutzeroberfläche",
     title: "Willkommen bei Growmigo",
   },
@@ -75,7 +75,7 @@ const vorschauItems = [
   },
   {
     id: 6,
-    image: "/images/vorschau/growmigo6.webp",
+    image: "/images/vorschau/growmigo1.webp",
     alt: "Fortschrittsanzeige und Statistiken des Pflanzenwachstums",
     title: "Verfolge dein Wachstum",
   },
