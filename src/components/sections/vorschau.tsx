@@ -148,12 +148,12 @@ const Vorschau = () => {
       <div className="max-w-4xl px-4 py-6 lg:px-6 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12">
           <YoutubeLazy
-            videoId="dQw4w9WgXcQ"
-            title="Gameplay Video"
+            videoId="PR8WOmkSxUA"
+            title="Growmigo Gameplay"
             description="Entdecke wie Growmigo funktioniert"
           />
           <YoutubeLazy
-            videoId="dQw4w9WgXcQ"
+            videoId="qb4gIVXHtRw"
             title="Tutorial Video"
             description="Lerne die Grundlagen der Pflanzenpflege"
           />
