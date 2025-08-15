@@ -2,7 +2,7 @@
 
 > **Studienprojekt** - Eine kinderfreundliche Website für eine Pflanzenpflege-App
 
-[![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
 [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)](https://vercel.com/)
@@ -17,15 +17,14 @@
 
 ## Technologie-Stack
 
-| Technologie       | Version | Verwendung                  |
-| ----------------- | ------- | --------------------------- |
-| **Next.js**       | 14.x    | React Framework, App Router |
-| **TypeScript**    | 5.x     | Type-safe JavaScript        |
-| **Tailwind CSS**  | 3.x     | Utility-first CSS Framework |
-| **React**         | 18.x    | UI Library                  |
-| **Framer Motion** | -       | Animations                  |
-| **Lucide React**  | -       | Icon Library                |
-| **OpenMoji**      | -       | Open-Source Emojis          |
+| Technologie      | Version | Verwendung                  |
+| ---------------- | ------- | --------------------------- |
+| **Next.js**      | 15.3.0  | React Framework, App Router |
+| **TypeScript**   | 5.x     | Type-safe JavaScript        |
+| **Tailwind CSS** | 3.4.17  | Utility-first CSS Framework |
+| **React**        | 18.3.1  | UI Library                  |
+| **Lucide React** | 0.503.0 | Icon Library                |
+| **OpenMoji**     | 15.1.0  | Open-Source Emojis          |
 
 ---
 
