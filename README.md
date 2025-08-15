@@ -44,7 +44,7 @@
 git clone https://github.com/Arda450/Growmigo.git
 cd Growmigo
 
-# Abhängigkeiten installieren
+# Abhängigkeiten installieren (lädt automatisch Next.js und alle benötigten Pakete herunter)
 npm install
 
 # Entwicklungsserver starten
@@ -52,6 +52,8 @@ npm run dev
 ```
 
 **Website öffnen:** http://localhost:3000
+
+**Hinweis für Dozenten:** Falls `node_modules/` nicht im Repository enthalten ist, installiert `npm install` automatisch alle benötigten Abhängigkeiten inklusive Next.js Framework.
 
 ---
 
