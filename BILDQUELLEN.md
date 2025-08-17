@@ -36,7 +36,3 @@ https://www.pexels.com/photo/green-plant-with-white-ceramic-pot-1084188/
 
 feuchte-luft-schaffen.jpg:
 https://www.pexels.com/photo/photo-of-a-smiley-face-2935956/
-
-# Bildquellen und Lizenzen
-
-Alle verwendeten Bilder und deren Lizenzen sind in `Bildquellen_Growmigo.pdf` dokumentiert.
