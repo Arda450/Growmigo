@@ -45,39 +45,51 @@ const CarouselPrevious = dynamic(() =>
 const vorschauItems = [
   {
     id: 1,
-    image: "/images/vorschau/growmigo6.webp",
+    image: "/images/vorschau/growmigo_1.webp",
     alt: "Growmigo Startbildschirm mit Pflanzentöpfen und Benutzeroberfläche",
     title: "Willkommen bei Growmigo",
   },
   {
     id: 2,
-    image: "/images/vorschau/growmigo2.webp",
+    image: "/images/vorschau/growmigo_2.webp",
     alt: "Spieler pflegt virtuelle Pflanze durch Giessen und Düngen",
     title: "Pflege deine Pflanzen",
   },
   {
     id: 3,
-    image: "/images/vorschau/growmigo3.webp",
+    image: "/images/vorschau/growmigo_3.webp",
     alt: "Belohnungssystem mit Punkten und Achievements für Pflanzenpflege",
     title: "Sammle Belohnungen",
   },
   {
     id: 4,
-    image: "/images/vorschau/growmigo4.webp",
+    image: "/images/vorschau/growmigo_4.webp",
     alt: "Verschiedene Pflanzenarten und -sorten im Spiel entdecken",
     title: "Entdecke neue Arten",
   },
   {
     id: 5,
-    image: "/images/vorschau/growmigo5.webp",
+    image: "/images/vorschau/growmigo_5.webp",
     alt: "Lernmodus mit Tipps und Informationen zur Pflanzenpflege",
     title: "Lerne Pflanzenpflege",
   },
   {
     id: 6,
-    image: "/images/vorschau/growmigo1.webp",
+    image: "/images/vorschau/growmigo_6.webp",
     alt: "Fortschrittsanzeige und Statistiken des Pflanzenwachstums",
     title: "Verfolge dein Wachstum",
+  },
+  {
+    id: 7,
+    image: "/images/vorschau/growmigo_7.webp",
+    alt: "Pflanzenpflege-App mit Pflanzen- und Topf-Management",
+    title: "Verwalte deine Pflanzen",
+  },
+  {
+    id: 8,
+    image: "/images/vorschau/growmigo_8.webp",
+    alt: "Pflanzenpflege-App mit Pflanzen- und Topf-Management",
+    title: "Verwalte deine Pflanzen",
   },
 ];
 
@@ -115,7 +127,7 @@ const Vorschau = () => {
                 <div className="p-2 h-full">
                   <div
                     className="relative w-full rounded-lg overflow-hidden border-2 border-[#909d7b]"
-                    style={{ aspectRatio: "9/16" }}
+                    style={{ aspectRatio: "9/20" }}
                   >
                     <Image
                       src={item.image}
